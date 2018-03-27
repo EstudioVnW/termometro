@@ -1,7 +1,7 @@
 <template>
   <section>
-    <div class="containner">
-      <div class="LogoTermometro">
+    <div class="container">
+      <div class="logo-Termometro">
         <img src="../assets/termometro.png">
       </div>
       <div class="dados">
@@ -10,10 +10,10 @@
         <button class="dados-button">Entrar</button>
       </div>
       <div class="acesso">
-        <p>Primeiro Acesso</p>
+        <p class="acesso-PrimeiroPassos">Primeiro Acesso</p>
         <p>Esqueceu a senha?</p>
       </div>
-      <div class="logovai">
+      <div class="logo-VaiNaWeb">
         <img src="../assets/logo-vainaweb.svg">
       </div>
     </div>
@@ -37,50 +37,66 @@ export default {
 <style scoped>
 
 section{
+  background-color: #FCAF17;
+  border: 1px solid rgba(0, 0, 0, 0.70);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  height: 99.7vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.containner{
+.container{
   width: 502px;
   min-height: 403px;
   background-color: #fff;
   border: 2px solid #2E3192;
   border-radius: 10px;
- /* box-shadow: 0px 3px 6px #000000;*/
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.LogoTermometro img{
-  width: 33.51px;
+.logo-Termometro img{
+  /*width: 5vw;*/
+  /*width: 36px;*/
+  width: 10%;
+  /*width: 36%;*/
+  margin: 0 0 21px 0;
 }
 
 .dados{
-  color: #2E3192;
-  font-size: 1rem;
   display: flex;
   flex-direction: column;
-}
+} 
 
 .dados-email{
+  font-size: 0.75em;
   color: #2E3192;
+  margin: 0 0 9px 0;
+  height: 5.10vh;
+  border: 2px solid #2E3192;
+  border-radius: 10px;
 }
 
 .dados-senha{
+  font-size: 0.75em;
   color: #2E3192;
+  margin: 0 0 9px 0;
+  height: 5.10vh;
+  border: 2px solid #2E3192;
+  border-radius: 10px;
 }
 
 .dados-button{
+  /*width:  27vw;*/
   width:  275.67px;
-  margin: 9.47px 0 0 0;
   padding: 10px;
   color: #fff;
   font-family: Ministry, Heavy, sans-serif;
-  font-size: 16px;
+  font-size: 0.75em;
   border: none;
   background-color: #2E3192;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
@@ -90,13 +106,18 @@ section{
 .acesso{
   color: #f26522;
   font-size: 0.875rem;
-  /*display: flex;  
-  justify-content: space-around;
-  align-items: center;*/
+  display: flex;
+  flex-direction: row;    
 }
 
-.logovai{
-  width: 10vh;
+.acesso-PrimeiroPassos{
+  margin: auto 30px auto 1px;
+}
+
+.logo-VaiNaWeb img{
+  /*width: 10vw;
+  width: 76.54px;*/
+  width: 37%;
 }
 
 </style>
