@@ -5,6 +5,10 @@ import comentario from '@/components/comentario'
 import aluno from '@/components/aluno'
 import Hello from '@/components/Hello'
 import Chamada from '@/components/Chamada'
+import Tela7 from '@/components/Tela7'
+import Tela9 from '@/components/Tela-9'
+
+
 
 Vue.use(Router)
 
@@ -34,6 +38,21 @@ export default new Router({
       path: '/Chamada',
       name: 'Chamada',
       component: Chamada
+    },
+    {
+      path: '/Tela7',
+      name: 'Tela7',
+      component: Tela7
+    },
+    {
+      path: '/Tela9',
+      name: 'Tela-9',
+      component: Tela9
+    },
+    {
+      path: '/tela-5',
+      name: 'tela-5',
+      component: tela-5
     }
   ]
 })
