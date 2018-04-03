@@ -12,12 +12,21 @@ import Tela9 from '@/components/Tela-9'
 
 Vue.use(Router)
 
-export default new Router({
+let isLogged = false;
+
+export const login = (email, senha) => {
+  isLogged = true;
+}
+
+const router = new Router({
   routes: [
     {
       path: '/',
       name: 'HelloWorld',
-      component: HelloWorld
+      component: HelloWorld,
+      props: {
+        login: login
+      }
     },
     {
       path: '/comentario',
@@ -48,11 +57,20 @@ export default new Router({
       path: '/Tela9',
       name: 'Tela-9',
       component: Tela9
-    },
-    {
-      path: '/tela-5',
-      name: 'tela-5',
-      component: tela-5
     }
   ]
 })
+
+router.beforeEach((to, from, next) => {
+  if (to.path === "/") {
+    next();
+  } else {
+    if (isLogged) {
+      next();
+    } else {
+      next({path: '/'})
+    }
+  }
+})
+
+export default router

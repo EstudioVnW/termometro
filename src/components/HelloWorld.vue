@@ -4,11 +4,21 @@
       <div class="logo-Termometro">
         <img src="../assets/termometro.png">
       </div>
-      <div class="dados">
-        <input class="dados-email"  placeholder="Email"></input>
-        <input class="dados-senha"  placeholder="Senha"></input>
-        <button class="dados-button">Entrar</button>
-      </div>
+      <form v-on:submit.prevent="loginRequest">
+        <div class="dados">
+          <input 
+          class="dados-email"  
+          placeholder="Email" 
+          type="email" 
+          @input="event => {form.email = event.target.value} " />
+          <input 
+          class="dados-senha"  
+          placeholder="Senha" 
+          type="password" 
+          @input="event => {form.senha = event.target.value} "/>
+          <button class="dados-button" type="submit">Entrar</button>
+        </div>
+      </form>
       <div class="acesso">
         <p class="acesso-PrimeiroPassos">Primeiro Acesso</p>
         <p>Esqueceu a senha?</p>
@@ -25,9 +35,17 @@
 <script>
 export default {
   name: 'HelloWorld',
+  props: [
+    'login'
+  ],
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      form: {}
+    }
+  },
+  methods: {
+    loginRequest() {
+      this.login(this.form.email, this.form.senha)
     }
   }
 }
@@ -79,6 +97,7 @@ section{
   height: 5.10vh;
   border: 2px solid #2E3192;
   border-radius: 10px;
+  padding-left: 5px;
 }
 
 .dados-senha{
@@ -88,6 +107,7 @@ section{
   height: 5.10vh;
   border: 2px solid #2E3192;
   border-radius: 10px;
+  padding-left: 5px;
 }
 
 .dados-button{
