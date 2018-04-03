@@ -26,7 +26,7 @@ export default new Router({
       component: aluno
     },
     {
-      path: '/',
+      path: '/Hello',
       name: 'Hello',
       component: Hello
     },
