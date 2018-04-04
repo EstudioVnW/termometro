@@ -5,8 +5,11 @@ import comentario from '@/components/comentario'
 import aluno from '@/components/aluno'
 import Hello from '@/components/Hello'
 import Chamada from '@/components/Chamada'
-import Tela7 from '@/components/Tela7'
-import Tela9 from '@/components/Tela-9'
+import ProfessorDuvida from '@/components/ProfessorDuvida'
+import DuvidaAluno from '@/components/DuvidaAluno'
+import TelaAvaliacaoAula from '@/components/TelaAvaliacaoAula'
+import aula from '@/components/aula'
+import aulatermino from '@/components/aulatermino'
 
 
 
@@ -40,19 +43,29 @@ export default new Router({
       component: Chamada
     },
     {
-      path: '/Tela7',
-      name: 'Tela7',
-      component: Tela7
+      path: '/DuvidaAluno',
+      name: 'DuvidaAluno',
+      component: DuvidaAluno
     },
     {
-      path: '/Tela9',
-      name: 'Tela-9',
-      component: Tela9
+      path: '/ProfessorDuvida',
+      name: 'ProfessorDuvida',
+      component: ProfessorDuvida
     },
     {
-      path: '/tela-5',
-      name: 'tela-5',
-      component: tela-5
+      path: '/TelaAvaliacaoAula',
+      name: 'TelaAvaliacaoAula',
+      component: TelaAvaliacaoAula
+    },   
+    {
+      path: '/aula',
+      name: 'aula',
+      component: aula
+    },
+    {
+      path: '/aulatermino',
+      name: 'aulatermino',
+      component: aulatermino
     }
   ]
 })

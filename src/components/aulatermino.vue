@@ -6,7 +6,7 @@
 				<img class="imagem-vainaweb" src="../assets/logo-vainaweb.svg">
 			</div>
 			<div class="texto">
-				<p>Sua aula ja vai começar!</p>
+				<p>Sua aula está sendo finalizada!</p>
 			</div>
 		</div>
 	</section>

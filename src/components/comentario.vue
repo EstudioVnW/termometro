@@ -2,7 +2,7 @@
   <section class="container">
     <div class="containner-descricao">
       <div class="containner-descricao-imagem">
-        <img class="containner-descricao-imagem-termometro" src="../assets/termometro.png">
+        <img class="containner-descricao-imagem-termometro" src="../assets/termometro2.svg">
         <img class="containner-descricao-imagem-VaiNaWeb" src="../assets/logo-vainaweb.svg">
       </div>
       <div class="containner-descricao-titulo">
@@ -12,11 +12,11 @@
         <p>Responda com sinceridade e faça comentários objetivos e construtivos, que possam ajudar a equipe Vai na Web a melhor o seu aprendizado. Adoramos receber sugestões, então se tiver alguma, deixa aí junto com a sua avaliação.</p>
       </div>
       <div class="containner-avaliacao">
-        <p class="containner-avaliacao-imagem"></p>
-        <p class="containner-avaliacao-imagem"></p>
-        <p class="containner-avaliacao-imagem"></p>
-        <p class="containner-avaliacao-imagem"></p>
-        <p class="containner-avaliacao-imagem"></p>
+        <img class="containner-avaliacao-imagem" src="../assets/chata.png">
+        <img class="containner-avaliacao-imagem" src="../assets/desanimada1.png">
+        <img class="containner-avaliacao-imagem" src="../assets/ok.png">
+        <img class="containner-avaliacao-imagem" src="../assets/animada.png">
+        <img class="containner-avaliacao-imagem" src="../assets/incrivel.png">
       </div>
     </div>
     <div class="container-comentario">
@@ -24,7 +24,8 @@
         <p>Deixe aqui o seu comentário</p>
       </div>
       <div class="container-comentario-escrever">
-        <input v-model="escrevercomentario" placeholder="Deixe aqui o seu comentário">
+        <textarea placeholder="Deixe aqui o seu comentário"></textarea>
+        <!-- <input v-model="escrevercomentario" placeholder="Deixe aqui o seu comentário"> -->
       </div>
       <div class="container-comentario-button">
         <button class="container-comentario-button-avaliar">Avaliar aula</button>
@@ -49,36 +50,32 @@ export default {
 
 section{ 
   background-color: #FCAF17;
-  border: 1px solid rgba(0, 0, 0, 0.70);
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-  height: 99.7vh;
+  height: 100vh;
   display: flex;
-  /*flex-direction: row;
-  justify-content: center;*/
+  justify-content: center;
 }
 
 .containner-descricao{
   width: 50%;
   text-align: left;
-  padding: 5.5% 1% 5.5% 5.5%;
- /*text-align: left;*/
+  padding: 5.5% 0 5.5% 5.5%;
 }
 
 .containner-descricao-imagem-termometro{
-  width: 6%;
+  width: 5.6%;
 }
 
 .containner-descricao-imagem-VaiNaWeb{
-  width: 13%;
-  margin-bottom: 1.5%;
+  width: 16%;
+  margin: 19px 8px;
 }
 
 .containner-descricao-titulo {  
   font-family: Ministry, Heavy, sans-serif;
   color: #2E3192;
   font-size: 2em;
- /* width: 387px;*/
-  width: 63%;
+  width: 63%;  
+  font-weight: bolder;
 }
 
 .containner-descricao-texto {
@@ -95,12 +92,8 @@ section{
 
 
 .containner-avaliacao-imagem{
-  background: #fff;
-  width:  12.5vh;
-  height:  12.5vh;
-  border-radius: 50%;
-  border: 1px solid #707070;
-  margin: 0 10px auto;
+  width: 89.85px;
+  height: 79.85px;
 }
 
 .container-comentario {
@@ -108,33 +101,48 @@ section{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-weight: bolder;
 }
 
 .container-comentario-titulo{
   color: #2E3192;
   font-size: 2em;
   font-family: Ministry, Heavy, sans-serif;
-  text-align: left;
+  text-align: left;  
+  font-weight: bolder;
 }
 
-.container-comentario-escrever input{ 
-  height: 44vh;   
+.container-comentario-escrever textarea{ 
+  height: 30vh;   
   width: 37vw;
-  border:1px solid #2E3192;  
+  border: 2px solid #2E3192;  
   border-radius: 10px;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  resize: none;
+  color: #2E3192;
+  padding: 10px;
 }
-/*
-.container-comentario-escrever:: -webkit-input-placeholder {
-  color: #f8433f;
-}*/
 
-/*.container-comentario-escrever input:: -webkit-input-placeholder{
-    color: #f8433f;*/
-    /*background-color: #4C4;
-    text-transform: uppercase;
-    font-style: bold;
-}*/
+
+::-webkit-input-placeholder {
+  color: #2E3192;
+  font: 16px Ministry, Medium, sans-serif;
+}
+
+
+:-moz-placeholder {
+  color: #2E3192;
+  font: 16px Ministry, Medium, sans-serif;
+}
+
+::-moz-placeholder {
+  color: #2E3192;
+  font: 16px Ministry, Medium, sans-serif;
+}
+
+:-ms-input-placeholder {  
+  color: #2E3192;
+  font: 16px Ministry, Medium, sans-serif;
+}
 
 .container-comentario-button{
   height: 41.53px;
