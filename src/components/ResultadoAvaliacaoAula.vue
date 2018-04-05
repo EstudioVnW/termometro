@@ -18,7 +18,7 @@
         <h1 class="pai-avaliaçao-da-aula-conteiner-titulo">Avaliação da Aula:</h1>
         <div class="pai-avaliaçao-da-aula-conteiner-dupla">
           <img class="pai-avaliaçao-da-aula-termometro_img" src="../assets/termometro.svg"> 
-          <h3 class="pai-avaliaçao-da-aula-sobre_aula">A aula de hoje recebeu uma avaliação menor que 5. Veja os comentarios dos estudantes.</h3>
+          <h3 class="pai-avaliaçao-da-aula-sobre_aula">A aula de hoje recebeu uma avaliação menor que 5. <br>Veja os comentarios dos estudantes.</h3>
         </div>  
         <input class="pai-avaliaçao-da-aula-botao" type="button" name="botao-ok" value="Voltar">
       </div>  
@@ -152,7 +152,7 @@ export default {
   .pai-avaliaçao-da-aula-conteiner-dupla{
     display: flex;
     flex-direction: column;
-    height: 56vh;
+    height: 50vh;
   }
   .pai-avaliaçao-da-aula-conteiner-titulo{
     font-weight: normal;
@@ -179,6 +179,7 @@ export default {
     justify-content: flex-end;
     margin: 0;
     font-weight: normal;
+    font-size: 1.2em;
   }
   .pai-avaliaçao-da-aula-botao{
     align-self: flex-end;

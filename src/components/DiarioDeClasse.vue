@@ -45,7 +45,7 @@
     <td>26</td>
    </tr>
    <tr><td>1</td>
-    <td> Alan Fereira de Oliveira</td> 
+    <td class="names"> Alan Fereira de Oliveira</td> 
     <td class="marcacao"> x </td>
     <td class="marcacao"> x </td>
     <td class="marcacao"> x </td>
@@ -56,7 +56,7 @@
     <td class="marcacao"></td> 
    </tr>
    <tr><td>2</td> 
-    <td>Beatriz Regina Ferreira Mendes</td>
+    <td class="names">Beatriz Regina Ferreira Mendes</td>
      <td class="marcacao"> x </td>
     <td class="marcacao"> x </td>
     <td class="marcacao"> x </td>
@@ -68,7 +68,7 @@
    </tr>
    <tr>
     <td>3</td>
-    <td>Daniella Machado Lima</td> 
+    <td class="names">Daniella Machado Lima</td> 
     <td class="marcacao"> x </td>
     <td class="marcacao"> x </td>
     <td class="marcacao"> x </td>
@@ -80,7 +80,7 @@
   </tr>
    <tr>
     <td>4</td> 
-    <td>Fabio Minervino da Silva</td> 
+    <td class="names">Fabio Minervino da Silva</td> 
     <td class="marcacao"> x </td>
     <td class="marcacao"> x </td>
     <td class="marcacao"> x </td>
@@ -92,7 +92,7 @@
   </tr>
    <tr>
     <td>5</td> 
-    <td>João Victor Pinto dos Santos</td>
+    <td class="names">João Victor Pinto dos Santos</td>
      <td class="marcacao"> x </td>
     <td class="marcacao"> x </td>
     <td class="marcacao"> x </td>
@@ -104,7 +104,7 @@
    </tr>
    <tr>
     <td>6</td> 
-    <td> Matheus Pereira Santana de Oliveira
+    <td class="names"> Matheus Pereira Santana de Oliveira
  </td> 
     <td class="marcacao"> P </td>
     <td class="marcacao"> P </td>
@@ -117,7 +117,7 @@
   </tr>
    <tr>
     <td>7</td> 
-    <td>  Pâmela Waleska de Oliveira da Costa
+    <td class="names">  Pâmela Waleska de Oliveira da Costa
 </td> 
     <td class="marcacao"> P </td>
     <td class="marcacao"> F </td>
@@ -130,7 +130,7 @@
   </tr>
    <tr>
     <td>8</td> 
-    <td>Rodrigo Francisco Gonçalves
+    <td class="names">Rodrigo Francisco Gonçalves
 </td> 
     <td class="marcacao"> P </td>
     <td class="marcacao"> x </td>
@@ -143,7 +143,7 @@
   </tr>
    <tr>
     <td>9</td>
-     <td>Agenor Junio</td> 
+     <td class="names">Agenor Junio</td> 
      <td class="marcacao"> x </td>
     <td class="marcacao"> x </td>
     <td class="marcacao"> x </td>
@@ -155,7 +155,7 @@
    </tr>
    <tr>
     <td>10</td> 
-    <td>Tarcisio Adelson do Nascimento</td>
+    <td class="names">Tarcisio Adelson do Nascimento</td>
      <td class="marcacao"> x </td>
     <td class="marcacao"> x </td>
     <td class="marcacao"> P </td>
@@ -167,7 +167,7 @@
    </tr>
    <tr>
     <td>11</td>
-     <td>Thayná Barcelos Santos de Oliveira</td> 
+     <td class="names">Thayná Barcelos Santos de Oliveira</td> 
      <td class="marcacao"> x </td>
     <td class="marcacao"> x </td>
     <td class="marcacao"> P </td>
@@ -179,7 +179,7 @@
    </tr>
    <tr>
     <td>12</td> 
-    <td>Thiago Brandão da Barros</td>
+    <td class="names">Thiago Brandão da Barros</td>
      <td class="marcacao"> x </td>
     <td class="marcacao"> P </td>
     <td class="marcacao"> x </td>
@@ -191,7 +191,7 @@
    </tr>
    <tr>
     <td>13</td>
-     <td>Veridiane Aparecida Vidal da Silva</td> 
+     <td class="names">Veridiane Aparecida Vidal da Silva</td> 
      <td class="marcacao"> P </td>
     <td class="marcacao"> P</td>
     <td class="marcacao"> X </td>
@@ -203,7 +203,7 @@
    </tr>
    <tr>
     <td>14</td> 
-    <td>Yasmin Miranda dos Santos</td>
+    <td class="names">Yasmin Miranda dos Santos</td>
 
     <td class="marcacao"> P </td>
     <td class="marcacao"> P </td>
@@ -257,13 +257,13 @@
     background-size: 215vh 55vw;
   }
   .perfil{
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     vertical-align: middle;
-    margin: 0 55px 0;
+    margin: 0 35px 0;
     background-color: #F26522;
     border-color: #2E3192;
     border-width: 0,1em;
@@ -273,17 +273,18 @@
   .logos{
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   .logo{
-    width: 50px;
-    height: 46px;
+    width: 76px;
+    height: 54px;
     margin: 0;
   }
 
   .termometro{
     width: 33px;
-    height: 50px;
+    height: 96px;
     margin: 0;
   }
  
@@ -324,6 +325,7 @@
   background-color: #FFFFFF;
   margin: 0 auto;
   color: #2E3192;
+  font-weight: bold;
 }
 .tronco{
   padding: 0 0 0 40px;
@@ -359,6 +361,10 @@
   font-weight: bold;
 }
 
+.names{
+  text-align: left;
+}
+
 tr td{
   border: 1px solid #FFAC2D;
   font-size: 0.7em;
@@ -372,7 +378,7 @@ tr td{
 .classe{
   line-height: 1.2em;
   margin:0;
-  padding: 30px 0 0 0
+  padding: 35px 0 0 0
 }
 
 h4{
@@ -382,6 +388,7 @@ h4{
   width: 160px;
   height: 40px;
   margin: 0;
+  text-align: left;
 }
 
 h2{
@@ -389,22 +396,26 @@ h2{
   font-size: 1.80em;
   width: 90px;
   height: 40px;
-  margin: 0px
+  margin: 0px;
+  padding-top: 6px;
 
 }
 
 .legenda{
   width: 89.16px;
-  height: 56.01px;
+  height: 99px;
+  margin: 0 0 3px 0;
 }
 h1{
     color: #0F2B92;
     font-size: 0.8em;
+    text-align: left;
 }
 
 .subtitle{
   color: #FF611E;
   font-size: 0.68em;
+  text-align: left;
 }
 
 .botoes{
@@ -413,6 +424,7 @@ h1{
   display: flex;
   justify-content: space-between;
   margin: 0 0 40px 0;
+
 }
 .button-Volta{
   border-color: #2E3192;

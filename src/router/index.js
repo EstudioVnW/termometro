@@ -1,15 +1,15 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-import comentario from '@/components/comentario'
-import aluno from '@/components/aluno'
-import Hello from '@/components/Hello'
-import Chamada from '@/components/Chamada'
+import Longin from '@/components/Longin'
+import AvaliandoAprendizado from '@/components/AvaliandoAprendizado'
+import AvisoInicial from '@/components/AvisoInicial'
+import ProfessorInicial from '@/components/ProfessorInicial'
+import DiarioDeClasse from '@/components/DiarioDeClasse'
 import ProfessorDuvida from '@/components/ProfessorDuvida'
 import DuvidaAluno from '@/components/DuvidaAluno'
-import TelaAvaliacaoAula from '@/components/TelaAvaliacaoAula'
-import aula from '@/components/aula'
-import aulatermino from '@/components/aulatermino'
+import ResultadoAvaliacaoAula from '@/components/ResultadoAvaliacaoAula'
+import DescricaoAula from '@/components/DescricaoAula'
+import Avisotermino from '@/components/Avisotermino'
 
 
 
@@ -19,31 +19,31 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'Longin',
+      component: Longin
     },
     {
-      path: '/comentario',
-      name: 'comentario',
-      component: comentario
+      path: '/avaliando-aprendizado',
+      name: 'AvaliandoAprendizado',
+      component: AvaliandoAprendizado
     },
     {
-      path: '/aluno',
-      name: 'aluno',
-      component: aluno
+      path: '/aviso-inicial',
+      name: 'AvisoInicial',
+      component: AvisoInicial
     },
     {
-      path: '/Hello',
-      name: 'Hello',
-      component: Hello
+      path: '/professor-inicial',
+      name: 'ProfessorInicial',
+      component: ProfessorInicial
     },
     {
-      path: '/Chamada',
-      name: 'Chamada',
-      component: Chamada
+      path: '/diario-de-classe',
+      name: 'DiarioDeClasse',
+      component: DiarioDeClasse
     },
     {
-      path: '/DuvidaAluno',
+      path: '/duvida-aluno',
       name: 'DuvidaAluno',
       component: DuvidaAluno
     },
@@ -53,19 +53,19 @@ export default new Router({
       component: ProfessorDuvida
     },
     {
-      path: '/TelaAvaliacaoAula',
-      name: 'TelaAvaliacaoAula',
-      component: TelaAvaliacaoAula
+      path: '/resultado-avaliacao-aula',
+      name: 'ResultadoAvaliacaoAula',
+      component: ResultadoAvaliacaoAula
     },   
     {
-      path: '/aula',
-      name: 'aula',
-      component: aula
+      path: '/descricao-aula',
+      name: 'DescricaoAula',
+      component: DescricaoAula
     },
     {
-      path: '/aulatermino',
-      name: 'aulatermino',
-      component: aulatermino
+      path: '/aviso-termino',
+      name: 'Avisotermino',
+      component: Avisotermino
     }
   ]
 })

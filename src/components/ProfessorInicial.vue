@@ -83,13 +83,13 @@ export default {
   }
 
   .perfil{
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     vertical-align: middle;
-    margin: 0 55px 0;
+    margin: 0 35px 0;
     background-color: #F26522;
     border-color: #2E3192;
     border-width: 0,1em;
@@ -99,17 +99,18 @@ export default {
   .logos{
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   .logo{
-    width: 50px;
-    height: 46px;
+    width: 76px;
+    height: 54px;
     margin: 0;
   }
 
   .termometro{
     width: 33px;
-    height: 50px;
+    height: 96px;
     margin: 0;
   }
  
@@ -150,6 +151,8 @@ export default {
   height: 5vh;
   background-color: #FFFFFF;
   margin: 0 auto;
+  color: #2E3192;
+  font-weight: bold;
 }
 
 .button{
@@ -177,6 +180,7 @@ h4{
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  text-align: left;
 }
   .column{
           margin: 0 0 0 50px;

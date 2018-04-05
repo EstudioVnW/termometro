@@ -358,7 +358,7 @@ input[type=radio]:checked::after{
 .container-button{
   display: flex;
   justify-content: space-between;
-  margin: 47px 50px 0 22px;
+  margin: 25px 50px 0 22px;
 }
 
 .container-button-voltar{
