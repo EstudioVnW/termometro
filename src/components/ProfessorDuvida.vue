@@ -32,6 +32,7 @@
         <h1>Centro de Dúvidas</h1>
         <div class="pai-centro_duvidas-lista_conteiner-recados">
           <ul class="pai-centro_duvidas-lista_conteiner-recados-ul" v-for="recado in usuario.recados">
+            <input type="color" aria-label="select pen color">
             <li class="pai-centro_duvidas-lista_conteiner-recados-ul-li">{{recado}}</li>
           </ul>
         </div>
@@ -117,8 +118,8 @@ export default {
     justify-content: center;
   }
   .pai-sobre-foto-professor-perfil{
-    width: 11vw;
-    height: 21vh;
+    width: 130px;
+    height: 130px;
     border-radius: 60%;
     border-style: solid;
     border-width: 0,1vw;
@@ -128,18 +129,22 @@ export default {
   .pai-sobre-expecificacoes-prof{
     margin: 0;
     color: #2E3192;
+
   }
   .pai-sobre-expecificacoes-prof-nome{
     margin: 0;
-    font-weight: normal;
+    font-weight: bold;
+    font-size: 0.9em;
   }
   .pai-sobre-expecificacoes-prof-proficao{
     margin: 0;
     font-weight: normal;
+    font-size: 0.9em;
   }
   .pai-sobre-expecificacoes-prof-local{
     margin: 0;
-    font-weight: normal;    
+    font-weight: normal; 
+    font-size: 0.9em;   
   }
   .pai-sobre-botao{
     border-radius: 8px;
@@ -148,7 +153,9 @@ export default {
     background-color: #FFFFFF;
     border-style: solid;
     border-width: 2px;
-    border-color: #2E3192;      
+    border-color: #2E3192; 
+    color:#2E3192;
+    font-weight: bold;     
   }
   .pai-centro_duvidas{
     display: flex;
@@ -182,11 +189,13 @@ export default {
     margin: 0;
     font-weight: normal;
     color: #FF611E;
+    font-weight: bold;
   }
   .pai-centro_duvidas-retangulo-expecificaçoes-topo_turma-turma-T{
     margin: 0;
     font-weight: normal;
     color: #FF611E;
+    font-weight: bold;
   }
   .pai-centro_duvidas-retangulo-expecificaçoes-topo_turma-turma{
     display: flex;
@@ -196,6 +205,7 @@ export default {
   .pai-centro_duvidas-retangulo-expecificaçoes-topo_turma-turno{
     margin: 0;
     font-weight: normal;
+    font-weight: bold;
   }
   .pai-centro_duvidas-retangulo-botao{
       border-radius: 8px;
@@ -206,20 +216,28 @@ export default {
       border-width: 2px;
       border-color: #2E3192;
       margin: 10px 10px 0px 0px;
+      color:#2E3192;
+      font-weight: bold;
+  }
+  .pai-centro_duvidas-retangulo-expecificaçoes-materia{
+    font-weight: bold;
   }
   .pai-centro_duvidas-retangulo-expecificaçoes-materia_sobre{
     display: flex;
     margin: 0;
     justify-content: space-around;
     height: 40vh;
+    width: 12vw;
+    text-align: left;
   }
   .pai-centro_duvidas-lista_conteiner-recados-ul{
-    list-style-type: circle;
+    
     overflow: auto;
     border-style: solid;
     border-width: 2px;
     border-color: #2E3192;
     border-radius: 8px;
+    list-style: none;
   }
   .pai-centro_duvidas-lista_conteiner-recados-ul-li{
     margin: 5px;
@@ -235,9 +253,12 @@ export default {
     width: 39vw;
     flex-direction: column;
     text-align: left;
-    margin: 0;
+    margin: 25px 0 0 0;
     justify-content: center;
     color: #2E3192;
+  }
+  h1{
+    font-size: 1.5em;
   }
   .pai-centro_duvidas-retangulo-legenda{
     height: 85vh;

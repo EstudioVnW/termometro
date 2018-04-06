@@ -48,7 +48,7 @@ export default new Router({
       component: DuvidaAluno
     },
     {
-      path: '/ProfessorDuvida',
+      path: '/professor-duvida',
       name: 'ProfessorDuvida',
       component: ProfessorDuvida
     },
