@@ -20,7 +20,9 @@
             <p class="pai-sobre_duvidas-retangulo-expecificaçoes-topo_turma-turno">Manhã</p>
           </div>
           <p class="pai-sobre_duvidas-retangulo-expecificaçoes-materia">Introdução ao CSS3</p>
-          <p class="pai-sobre_duvidas-retangulo-expecificaçoes-materia_sobre">Esse módulo foi criado para você que quer iniciar no universo da programação. Nele você vai aprender a criar sites incríveis que funcionem em diferentes tamanhos de tela como computadores desktops, celulares, tablets, TVs e muito mais. É o primeiro passo para você desenvolver páginas para sites, aplicativos mobile e sistemas web e desktop.</p>
+          <p class="pai-sobre_duvidas-retangulo-expecificaçoes-materia_sobre">
+            Esse módulo foi criado para você que quer iniciar no universo da programação. Nele você vai aprender a criar sites incríveis que funcionem em diferentes tamanhos de tela como computadores desktops, celulares, tablets, TVs e muito mais. É o primeiro passo para você desenvolver páginas para sites, aplicativos mobile e sistemas web e desktop.
+          </p>
       </div>
     </div>
     <div class="pai-centro_duvidas">
