@@ -14,13 +14,15 @@
       <div class="pai-sobre_duvidas-retangulo-expecificaçoes">
           <div class="pai-sobre_duvidas-retangulo-expecificaçoes-topo_turma">
             <div class="pai-sobre_duvidas-retangulo-expecificaçoes-topo_turma-turma">
-              <p class="pai-sobre_duvidas-retangulo-expecificaçoes-topo_turma-turma-M">MÓDULO 1 -</p>
+              <p class="pai-sobre_duvidas-retangulo-expecificaçoes-topo_turma-turma-M">MÓDULO 1 - </p>
               <p class="pai-sobre_duvidas-retangulo-expecificaçoes-topo_turma-turma-T">TURMA 2</p>
             </div>
             <p class="pai-sobre_duvidas-retangulo-expecificaçoes-topo_turma-turno">Manhã</p>
           </div>
           <p class="pai-sobre_duvidas-retangulo-expecificaçoes-materia">Introdução ao CSS3</p>
-          <p class="pai-sobre_duvidas-retangulo-expecificaçoes-materia_sobre">Esse módulo foi criado para você que quer iniciar no universo da programação. Nele você vai aprender a criar sites incríveis que funcionem em diferentes tamanhos de tela como computadores desktops, celulares, tablets, TVs e muito mais. É o primeiro passo para você desenvolver páginas para sites, aplicativos mobile e sistemas web e desktop.</p>
+          <p class="pai-sobre_duvidas-retangulo-expecificaçoes-materia_sobre">
+            Esse módulo foi criado para você que quer iniciar no universo da programação. Nele você vai aprender a criar sites incríveis que funcionem em diferentes tamanhos de tela como computadores desktops, celulares, tablets, TVs e muito mais. É o primeiro passo para você desenvolver páginas para sites, aplicativos mobile e sistemas web e desktop.
+          </p>
       </div>
     </div>
     <div class="pai-centro_duvidas">
@@ -32,11 +34,10 @@
           </ul>
         </div> 
         <div class="pai-centro_duvidas-caixa_comentario">
-          <label class="pai-centro_duvidas-caixa_comentario-entrada">
-            <span class="pai-centro_duvidas-caixa_comentario-entrada-descricao">Digite a sua dúvida:</span>
-            <input class="input-caixa-comentario" v-model="recado" v-on:keyup.enter="addRecado">
-            <input class="pai-centro_duvidas-caixa_comentario-botao_iniciar" type="button" name="botao-ok" value="Enviar dúvida">
-          </label>
+            <input class="input-caixa-comentario" v-model="recado" v-on:keyup.enter="addRecado" placeholder="Digite a sua dúvida">
+            <button class="pai-centro_duvidas-caixa_comentario-botao_iniciar">
+              Enviar dúvida
+            </button>
         </div>
       </div>
     </div>
@@ -52,7 +53,7 @@ export default {
       recado:'',
       legenda:'',
       usuario: {
-        recados: ['Não ficou claro como o sistema funciona!','Não entendi exatamente qual a ordem correta de usar os caractéres na hora de fechar uma tag.','Como faz para colocar um video rodando automa- ticamente quando a página carregar?','Como faz para colocar um video rodando automa- ticamente quando a página carregar?','Como faz para colocar um video rodando automa- ticamente quando a página carregar?','Como faz para colocar um video rodando automa- ticamente quando a página carregar?'],
+        recados: ['Não ficou claro como o sistema funciona!','Não entendi exatamente qual a ordem correta de usar os caractéres na hora de fechar uma tag.','Como faz para colocar um video rodando automaticamente quando a página carregar?','Como faz para colocar um video rodando automaticamente quando a página carregar?','Como faz para colocar um video rodando automaticamente quando a página carregar?','Como faz para colocar um video rodando automaticamente quando a página carregar?'],
         legendas: ['Respondido','Responder depois','Chamar atenção']
       } 
     }
@@ -63,77 +64,62 @@ export default {
 
 <style scoped>
 .pai{
+    height: 90vh; 
+    padding: 23px 6px;
+    background: url(../assets/foto-fundo.jpg) no-repeat #FF8C00; 
+    background-size: cover;
     display: flex;
     flex-direction: row;
-    background-color: #FF8C00;
-    padding: 23px 3px 23px 6px;
-    height: 93vh;
     justify-content: space-around;
-    background-image: url(../assets/foto-fundo.jpg); 
-    background-size: 100vw 113vh;
-    background-repeat: no-repeat;
   }
   .pai-sobre-o-professor{
-    display: flex;
-    width: 15vw;
-    border-style: solid;
-    border-color: #2E3192;
-    border-width: 2px;
-    background-color: #FFFFFF;
-    flex-direction: column;
-    align-items: center;
+    width: 16vw;
+    padding: 2% 0;
+    background-color: #fff;
+    border: solid 2px #2E3192;
     border-radius: 10px;
-    justify-content: space-around;
-  }
-  .pai-sobre-inicio-termometro-img{
-    height: 80px;
-    width: 60px;  
-  }
-  .pai-sobre-inicio-logo-img{
-    height: 7vh;
-    width: 5vw;
-  }
-  
-  .pai-sobre-inicio{
-    margin: 0 auto;
     display: flex;
-    width: 15vw;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .pai-sobre-inicio{
+    margin-bottom: 5%;
+    display: flex;
     align-items: center;
     justify-content: center;
   }
-  .pai-sobre-foto-professor-perfil{
-    width: 7vw;
-    height: 13vh;
-    border-radius: 60%;
-    border-style: solid;
-    border-width: 0,1vw;
-    border-color: #2E3192;
-    background-color: #F26522;
+  .pai-sobre-inicio-termometro-img{
+    height: 12vh; 
+  }
+  .pai-sobre-inicio-logo-img{
+    height: 7vh;
   }
   .pai-sobre-expecificacoes-prof{
-    margin: 0;
     color: #2E3192;
+    margin: 3% 0;
+  }
+  .pai-sobre-foto-professor-perfil{
+    width: 7vw;
+    margin: 3% 0;
+    background-color: #F26522;
+    border: solid 2px #2E3192;
+    border-radius: 100%;
   }
   .pai-sobre-expecificacoes-prof-nome{
     margin: 0;
-    font-weight: normal;
+    font-size: 16px;
+    font-weight: bold;
   }
   .pai-sobre-expecificacoes-prof-proficao{
     margin: 0;
+    font-size: 16px;
     font-weight: normal;
   }
   .pai-sobre-expecificacoes-prof-local{
     margin: 0;
+    font-size: 16px;
     font-weight: normal;    
-  }
-  .pai-sobre-botao{
-    border-radius: 8px;
-    height: 5vh;
-    width: 7vw;
-    background-color: #FFFFFF;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #2E3192;      
   }
   .pai-sobre_duvidas-retangulo-expecificaçoes{
     display: flex;
@@ -146,102 +132,98 @@ export default {
     color: #2E3192;
     
   }
+  .pai-sobre_duvidas-retangulo-expecificaçoes-topo_turma-turma{
+    width: 100%;
+    font-weight: normal;
+    display: flex;
+    justify-content: flex-start;
+  }
   .pai-sobre_duvidas-retangulo-expecificaçoes-topo_turma-turma-M{
     margin: 0;
+    font-size: 14px;
     font-weight: normal;
     color: #FF611E;
   }
   .pai-sobre_duvidas-retangulo-expecificaçoes-topo_turma-turma-T{
     margin: 0;
+    font-size: 14px;
     font-weight: normal;
     color: #FF611E;
   }
-  .pai-sobre_duvidas-retangulo-expecificaçoes-topo_turma-turma{
-    display: flex;
-    justify-content: flex-start;
-    font-weight: normal;
-  }
   .pai-sobre_duvidas-retangulo-expecificaçoes-topo_turma-turno{
     margin: 0;
-    font-weight: normal;
+    font-weight: bold;
+  }
+  .pai-sobre_duvidas-retangulo-expecificaçoes-materia{
+    font-weight: bold;
+    margin: 5% 0;
   }
   .pai-sobre_duvidas-retangulo-expecificaçoes-materia_sobre{
-    display: flex;
-    margin: 0;
-    justify-content: space-around;
-    height: 30vh;
+    min-height: 25vh;
     width: 14vw;
-    overflow: auto;
+    margin: 0;
+    font-size: 14px;
   }
   .pai-centro_duvidas{
-    display: flex;
-    margin: 0 ;
-    background-color: #FFFFFF;
     width: 80vw;
-    border-color:#2E3192;
-    border-width: 2px;
+    background-color: #fff;
+    border: solid 2px #2E3192;
     border-radius: 10px;
-    border-style: solid;
+    display: flex;
     justify-content: center;
+  }
+  .pai-centro_duvidas-lista_conteiner{
+    height: 90vh;
+    width: 50vw;
+    margin: 0;
+    text-align: left;
+    color: #2E3192;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .pai-centro_duvidas-lista_conteiner-recados{
+    width: 35vw;
+    overflow: auto;
   }
   .pai-centro_duvidas-lista_conteiner-recados-ul{
     list-style-type: circle;
     overflow: auto;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #2E3192;
+    padding-left: 0; 
+    border: solid 2px #2E3192;
     border-radius: 8px;
-    
+    background-color:
   }
   .pai-centro_duvidas-lista_conteiner-recados-ul-li{
     margin: 5px;
     color: #2E3192;
-
-  }
-  .pai-centro_duvidas-lista_conteiner-recados{
-    overflow: auto;
-    width: 35vw;
-  }
-  .pai-centro_duvidas-lista_conteiner{
-    display: flex;
-    height: 90vh;
-    width: 50vw;
-    flex-direction: column;
-    text-align: left;
-    margin: 0;
-    justify-content: center;
-    color: #2E3192;
+    list-style-type: none;
   }
   .pai-centro_duvidas-caixa_comentario{
-    display: flex;
-    align-self: flex-end;
-    justify-content: flex-start;
     width: 50vw;
     height: 9vh;
-  }
-  .pai-centro_duvidas-caixa_comentario-entrada{
-    display: flex;
-    border-style: solid;
-    border-right: ;
-    height: 8vh;
-    width: 50vw ;
+    border: solid 2px #2E3192;
     border-radius: 8px;
-    color: #2E3192;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #2E3192;
-    justify-content: space-around;
+    padding: 0 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-
+  .input-caixa-comentario{
+    width: 77%;
+    height: 8vh;
+    border: none;
+    font-size: 16px;
+    color: #2E3192;
+    padding-left: 2%;
+  }
   .pai-centro_duvidas-caixa_comentario-botao_iniciar{
     width: 10vw;
-    height: 5vh;
-    border-radius: 8px;
+    height: 7vh;
     background-color: #2E3192;
-    color: #FFFFFF;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #2E3192;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
     align-self: center;
 
   }
