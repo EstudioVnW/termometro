@@ -7,9 +7,11 @@
       </div>
       <div class="pai-sobre-expecificacoes-prof" >
         <img class="pai-sobre-foto-professor-perfil" src="../assets/foto-perfil.png">
+        <div class="texto">
           <h4 class="pai-sobre-expecificacoes-prof-nome">Rômulo Tunala</h4>
           <h5 class="pai-sobre-expecificacoes-prof-proficao">Professor</h5>
           <h5 class="pai-sobre-expecificacoes-prof-local" >Cpx.alemão</h5>
+        </div>
       </div>  
       <input class="pai-sobre-botao" type="button" name="botao-ok" value="Sair">
     </div>
@@ -17,9 +19,11 @@
       <div class="pai-avaliaçao-da-aula-conteiner">
         <h1 class="pai-avaliaçao-da-aula-conteiner-titulo">Avaliação da Aula:</h1>
         <div class="pai-avaliaçao-da-aula-conteiner-dupla">
-          <img class="pai-avaliaçao-da-aula-termometro_img" src="../assets/termometro.svg"> 
-          <h3 class="pai-avaliaçao-da-aula-sobre_aula">A aula de hoje recebeu uma avaliação menor que 5. <br>Veja os comentarios dos estudantes.</h3>
+          <img class="pai-avaliaçao-da-aula-termometro_img" src="../assets/termometro.svg">
+          <img class="pai-avaliacao-medidor" src="../assets/medidor.svg" >  
+          
         </div>  
+        <h3 class="pai-avaliaçao-da-aula-sobre_aula">A aula de hoje recebeu uma avaliação menor que 5. <br>Veja os comentarios dos estudantes.</h3>
         <input class="pai-avaliaçao-da-aula-botao" type="button" name="botao-ok" value="Voltar">
       </div>  
       <div class="pai-avaliaçao-da-aula-comentarios">
@@ -97,25 +101,33 @@ export default {
     justify-content: center;
   }
   .pai-sobre-foto-professor-perfil{
-    width: 11vw;
-    height: 21vh;
-    border-radius: 60%;
-    border-style: solid;
-    border-width: 0,1vw;
-    border-color: #2E3192;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    margin: 0 35px 20px;
     background-color: #F26522;
+    border-color: #2E3192;
+    border-width: 0,1em;
+    border-style: solid;
   }
   .pai-sobre-expecificacoes-prof{
     margin: 0;
     color: #2E3192;
   }
+ 
   .pai-sobre-expecificacoes-prof-nome{
+    
     margin: 0;
-    font-weight: normal;
+    font-weight: bold;
+    font-size: 0.9em;
   }
   .pai-sobre-expecificacoes-prof-proficao{
     margin: 0;
     font-weight: normal;
+    font-size: 0.9em;
   }
   .pai-sobre-expecificacoes-prof-local{
     margin: 0;
@@ -143,27 +155,38 @@ export default {
   .pai-avaliaçao-da-aula-conteiner{
     display: flex;
     flex-direction: column;
-    height: 47vw;
+    height: 43.9vw;
     width: 30vw;
     margin: 0;
     color: #2E3192;
     justify-content: space-evenly;
+    align-items: center;
   }
   .pai-avaliaçao-da-aula-conteiner-dupla{
     display: flex;
-    flex-direction: column;
-    height: 50vh;
+    justify-content: space-between;
+    height: 30vh;
+    width: 15vw;
+    align-items: center;
   }
   .pai-avaliaçao-da-aula-conteiner-titulo{
     font-weight: normal;
     margin: 0;
     justify-content: flex-end;
+    flex-direction: column;
+    font-size: 1.5em;
+    font-weight:bold;
   }
   .pai-avaliaçao-da-aula-termometro_img{
-    width: 20vw;
-    height: 42vh;
-    align-self: center;
+    height: 300px;
+    width: 107px;
+    margin: 0;
   }
+  .pai-avaliacao-medidor{
+    height: 240px;
+    width: 160px;
+    margin: 0 0 20px 0;
+  } 
 
   .pai-avaliaçao-da-aula-sobre_aula{
     margin: 0;
@@ -179,7 +202,7 @@ export default {
     justify-content: flex-end;
     margin: 0;
     font-weight: normal;
-    font-size: 1.2em;
+    font-size: 1em;
   }
   .pai-avaliaçao-da-aula-botao{
     align-self: flex-end;
@@ -192,7 +215,7 @@ export default {
     border-width: 2px;
     border-color: #2E3192;
     align-self: flex-start;
-    margin:  10px 0px 0px 15px;
+    margin:  10px 0px 0px 40px;
   }
   .pai-avaliaçao-da-aula-comentarios{
     color: #2E3192;
@@ -201,9 +224,12 @@ export default {
     margin: 0;
     text-align: left;
     align-self: center; 
+
   }
   .pai-avaliaçao-da-aula-comentarios-h1{
     font-weight: normal;
+    font-weight: bold;
+    font-size: 1.5em;
   }
   .pai-avaliaçao-da-aula-comentarios-lista{
     height: 50vh;

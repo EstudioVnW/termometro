@@ -32,7 +32,13 @@
         <h1>Centro de Dúvidas</h1>
         <div class="pai-centro_duvidas-lista_conteiner-recados">
           <ul class="pai-centro_duvidas-lista_conteiner-recados-ul" v-for="recado in usuario.recados">
-            <input type="color" aria-label="select pen color">
+          <div class="dropdown">
+            <button class="dropbtn">
+              
+              
+            </button>
+          </div>
+
             <li class="pai-centro_duvidas-lista_conteiner-recados-ul-li">{{recado}}</li>
           </ul>
         </div>

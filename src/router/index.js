@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Longin from '@/components/Longin'
+import Login from '@/components/Login'
 import AvaliandoAprendizado from '@/components/AvaliandoAprendizado'
 import AvisoInicial from '@/components/AvisoInicial'
 import ProfessorInicial from '@/components/ProfessorInicial'
@@ -19,8 +19,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Longin',
-      component: Longin
+      name: 'Login',
+      component: Login
     },
     {
       path: '/avaliando-aprendizado',
