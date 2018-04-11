@@ -138,7 +138,7 @@ export default {
   }
   .conteudo-descricao__prof--usuario{
     margin: 0;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: normal;
   }
   .conteudo-descricao__prof--local{
