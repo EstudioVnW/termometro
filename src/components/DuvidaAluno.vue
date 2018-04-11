@@ -203,7 +203,6 @@ export default {
   }
   .conteudo-duvidas__container-bloco-caixa{
     width: 40vw;
-    overflow: auto;
   }
   .conteudo-duvidas__container-bloco-caixa-lista{
     padding: 1%; 
@@ -211,6 +210,7 @@ export default {
     border-radius: 8px;
     display: flex;
     align-items: center;
+    overflow: auto;
   }
   .conteudo-duvidas__container-bloco-caixa-lista--recado{
     width: 85%;
