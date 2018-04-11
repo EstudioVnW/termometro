@@ -26,24 +26,33 @@
         <div class="conteudo-duvidas__container-bloco">
           <div class="conteudo-duvidas__container-bloco-caixa">
             <ul class="conteudo-duvidas__container-bloco-caixa-lista" v-for="recado in usuario.recados">
+              <div class="conteudo-duvidas__container-bloco-caixa2-caixa--cor"></div>
               <li class="conteudo-duvidas__container-bloco-caixa-lista--recado">{{recado}}</li>
             </ul>
           </div>
           <div class="conteudo-duvidas__container-bloco-caixa2">
             <div class="conteudo-duvidas__container-bloco-caixa2-caixa">
-              <div class="conteudo-duvidas__container-bloco-caixa2-caixa--cor"></div>
+              <div class="conteudo-duvidas__container-bloco-caixa2-caixa--cor">
+                <div class="conteudo-duvidas__container-bloco-caixa2-caixa--cor--color cor1"></div>
+              </div>
               <p class="conteudo-duvidas__container-bloco-caixa2-caixa--texto">Respondido</p>
             </div>
             <div class="conteudo-duvidas__container-bloco-caixa2-caixa">
-              <div class="conteudo-duvidas__container-bloco-caixa2-caixa--cor"></div>
+              <div class="conteudo-duvidas__container-bloco-caixa2-caixa--cor">
+                <div class="conteudo-duvidas__container-bloco-caixa2-caixa--cor--color cor2"></div>
+              </div>
               <p class="conteudo-duvidas__container-bloco-caixa2-caixa--texto">Responder depois</p>
             </div>
             <div class="conteudo-duvidas__container-bloco-caixa2-caixa">
-              <div class="conteudo-duvidas__container-bloco-caixa2-caixa--cor"></div>
+              <div class="conteudo-duvidas__container-bloco-caixa2-caixa--cor">
+                <div class="conteudo-duvidas__container-bloco-caixa2-caixa--cor--color cor3"></div>
+              </div>
               <p class="conteudo-duvidas__container-bloco-caixa2-caixa--texto">Chamar atenção</p>
             </div>
             <div class="conteudo-duvidas__container-bloco-caixa2-caixa">
-              <div class="conteudo-duvidas__container-bloco-caixa2-caixa--cor"></div>
+              <div class="conteudo-duvidas__container-bloco-caixa2-caixa--cor">
+                <div class="conteudo-duvidas__container-bloco-caixa2-caixa--cor--color cor4"></div>
+              </div>
               <p class="conteudo-duvidas__container-bloco-caixa2-caixa--texto">Dar prioridade</p>
             </div>
           </div>
@@ -68,7 +77,7 @@ export default {
       recado:'',
       legenda:'',
       usuario: {
-        recados: ['Não ficou claro como o sistema funciona!','Não entendi exatamente qual a ordem correta de usar os caractéres na hora de fechar uma tag.','Como faz para colocar um video rodando automaticamente quando a página carregar?','Como faz para colocar um video rodando automaticamente quando a página carregar?','Como faz para colocar um video rodando automaticamente quando a página carregar?','Como faz para colocar um video rodando automaticamente quando a página carregar?'],
+        recados: ['Não ficou claro como o sistema funciona!','Não entendi exatamente qual a ordem correta de usar os caractéres na hora de fechar uma tag.','Como faz para colocar um video rodando automaticamente quando a página carregar?','Como faz para colocar um video rodando automaticamente quando a página carregar?','Como faz para colocar um video rodando automaticamente quando a página carregar?'],
       },
       modulo: 'Modulo I',
       turma: 'Turma 2'
@@ -197,26 +206,26 @@ export default {
     overflow: auto;
   }
   .conteudo-duvidas__container-bloco-caixa-lista{
-    list-style-type: circle;
-    overflow: auto;
-    padding-left: 0; 
+    padding: 1%; 
     border: solid 2px #2E3192;
     border-radius: 8px;
-    background-color:
+    display: flex;
+    align-items: center;
   }
   .conteudo-duvidas__container-bloco-caixa-lista--recado{
-    margin: 5px;
+    width: 85%;
+    margin: 5px 10px;
     color: #2E3192;
     list-style-type: none;
   }
   .conteudo-duvidas__container-bloco-caixa2{
     width: 25%;
-    height: 30vh;
+    height: 25vh;
+    padding: 1% 0;
   }
   .conteudo-duvidas__container-bloco-caixa2-caixa{
     width: 100%;
     display: flex;
-    flex-direction: row;
     align-items: center;
   }
   .conteudo-duvidas__container-bloco-caixa2-caixa--cor{
@@ -224,6 +233,26 @@ export default {
     height: 22px;
     border: solid 2px #2E3192;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .conteudo-duvidas__container-bloco-caixa2-caixa--cor--color{
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+  }
+  .cor1{
+    background: #18E834;
+  }
+  .cor2{
+    background: #FCAF17;
+  }
+  .cor3{
+    background: #FF0000;
+  }
+  .cor4{
+    background: #F26522;
   }
   .conteudo-duvidas__container-bloco-caixa2-caixa--texto{
     width: 70%;
@@ -241,12 +270,14 @@ export default {
     align-items: center;
   }
   .conteudo-duvidas__container-bloco2--input{
-    width: 100%;
+    width: 95%;
     height: 8vh;
+    margin-right: 1%;
     border: none;
     font-size: 16px;
     color: #2E3192;
-    padding-left: 2%;
+    padding-left: 1%;
+    word-break: wrap;
   }
   .conteudo-duvidas__container-bloco2--button{
     width: 10vw;
