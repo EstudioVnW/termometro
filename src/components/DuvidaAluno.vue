@@ -59,7 +59,7 @@
         </div>
         <div class="conteudo-duvidas__container-bloco2">
             <input class="conteudo-duvidas__container-bloco2--input" v-model="recado" v-on:keyup.enter="addRecado" placeholder="Digite a sua dúvida">
-            <button class="conteudo-duvidas__container-bloco2--button">
+            <button class="conteudo-duvidas__container-bloco2--button" v-on:click="addRecado">
               Enviar dúvida
             </button>
         </div>
@@ -70,26 +70,30 @@
 
 <script>
 export default {
-  name: 'recado',
-  name: 'legenda',
+  name: 'DuvidaAluno',
   data () {
     return {
-      recado:'',
-      legenda:'',
-      usuario: {
-        recados: ['Não ficou claro como o sistema funciona!','Não entendi exatamente qual a ordem correta de usar os caractéres na hora de fechar uma tag.','Como faz para colocar um video rodando automaticamente quando a página carregar?','Como faz para colocar um video rodando automaticamente quando a página carregar?','Como faz para colocar um video rodando automaticamente quando a página carregar?'],
-      },
       modulo: 'Modulo I',
-      turma: 'Turma 2'
+      turma: 'Turma 2',
+      usuario: {
+        recados:[
+          'Não ficou claro como o sistema funciona!','Não entendi exatamente qual a ordem correta de usar os caractéres na hora de fechar uma tag.','Como faz para colocar um video rodando automaticamente quando a página carregar?','Como faz para colocar um video rodando automaticamente quando a página carregar?','Como faz para colocar um video rodando automaticamente quando a página carregar?'
+        ],
+      },
+    }
+  },
+  methods:{
+    addRecado(){
+      this.usuario.recados.push(this.recado)
+      this.recado = ''
     }
   }
 }
-</script>
-
+</script> 
 
 <style scoped>
 .body{
-    height: 90vh; 
+    height: 93vh; 
     padding: 23px 6px;
     background: url(../assets/foto-fundo.jpg) no-repeat #FF8C00; 
     background-size: cover;
@@ -175,6 +179,8 @@ export default {
     width: 14vw;
     margin: 0;
     font-size: 14px;
+    overflow: auto;
+
   }
   .conteudo-duvidas{
     width: 80vw;
@@ -203,6 +209,10 @@ export default {
   }
   .conteudo-duvidas__container-bloco-caixa{
     width: 40vw;
+    max-height: 55vh;
+    margin-bottom: 2%;
+    padding-right: 1%;
+    overflow: auto;
   }
   .conteudo-duvidas__container-bloco-caixa-lista{
     padding: 1%; 
@@ -210,7 +220,6 @@ export default {
     border-radius: 8px;
     display: flex;
     align-items: center;
-    overflow: auto;
   }
   .conteudo-duvidas__container-bloco-caixa-lista--recado{
     width: 85%;
@@ -277,7 +286,6 @@ export default {
     font-size: 16px;
     color: #2E3192;
     padding-left: 1%;
-    word-break: wrap;
   }
   .conteudo-duvidas__container-bloco2--button{
     width: 10vw;
