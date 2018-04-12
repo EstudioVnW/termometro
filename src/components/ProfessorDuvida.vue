@@ -32,26 +32,36 @@
         <h1>Centro de Dúvidas</h1>
         <div class="pai-centro_duvidas-lista_conteiner-recados">
           <ul class="pai-centro_duvidas-lista_conteiner-recados-ul" v-for="recado in usuario.recados">
-          <div class="dropdown">
-            <button class="dropbtn">
-              
-              
-            </button>
-          </div>
-
             <li class="pai-centro_duvidas-lista_conteiner-recados-ul-li">{{recado}}</li>
           </ul>
         </div>
       </div>
-      <div class="pai-centro_duvidas-retangulo-legenda">
-        <div class="pai-centro_duvidas-retangulo-legenda-caixa">       
-          <h3 class="pai-centro_duvidas-retangulo-legenda-titulo">Legenda</h3>
-          <ul class="pai-centro_duvidas-retangulo-legenda-caixa-ul" v-for="legenda in usuario.legendas">
-            <li>{{legenda}}</li>
-          </ul>      
-        </div>  
-        <input class="pai-sobre-botao_iniciar" type="button" name="botao-ok" value="Iniciar aula">
-      </div>   
+      <div class="conteudo-duvidas__container-bloco-caixa2">
+            <div class="conteudo-duvidas__container-bloco-caixa2-caixa">
+              <div class="conteudo-duvidas__container-bloco-caixa2-caixa--cor">
+                <div class="conteudo-duvidas__container-bloco-caixa2-caixa--cor--color cor1"></div>
+              </div>
+              <p class="conteudo-duvidas__container-bloco-caixa2-caixa--texto">Respondido</p>
+            </div>
+            <div class="conteudo-duvidas__container-bloco-caixa2-caixa">
+              <div class="conteudo-duvidas__container-bloco-caixa2-caixa--cor">
+                <div class="conteudo-duvidas__container-bloco-caixa2-caixa--cor--color cor2"></div>
+              </div>
+              <p class="conteudo-duvidas__container-bloco-caixa2-caixa--texto">Responder depois</p>
+            </div>
+            <div class="conteudo-duvidas__container-bloco-caixa2-caixa">
+              <div class="conteudo-duvidas__container-bloco-caixa2-caixa--cor">
+                <div class="conteudo-duvidas__container-bloco-caixa2-caixa--cor--color cor3"></div>
+              </div>
+              <p class="conteudo-duvidas__container-bloco-caixa2-caixa--texto">Chamar atenção</p>
+            </div>
+            <div class="conteudo-duvidas__container-bloco-caixa2-caixa">
+              <div class="conteudo-duvidas__container-bloco-caixa2-caixa--cor">
+                <div class="conteudo-duvidas__container-bloco-caixa2-caixa--cor--color cor4"></div>
+              </div>
+              <p class="conteudo-duvidas__container-bloco-caixa2-caixa--texto">Dar prioridade</p>
+            </div>
+          </div>   
     </div>
   </div>
 </template>
@@ -266,25 +276,46 @@ export default {
   h1{
     font-size: 1.5em;
   }
-  .pai-centro_duvidas-retangulo-legenda{
-    height: 85vh;
+  .conteudo-duvidas__container-bloco-caixa2{
+    width: 25%;
+    height: 25vh;
+    padding: 1% 0;
+  }
+  .conteudo-duvidas__container-bloco-caixa2-caixa{
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
+    align-items: center;
   }
-  .pai-centro_duvidas-retangulo-legenda-titulo{ 
-    text-align: left;
-    color: #2E3192;
-  }
-  .pai-centro_duvidas-retangulo-legenda-caixa{
+  .conteudo-duvidas__container-bloco-caixa2-caixa--cor{
+    width: 22px;
+    height: 22px;
+    border: solid 2px #2E3192;
+    border-radius: 5px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  .pai-centro_duvidas-retangulo-legenda-caixa-ul{
-    list-style-type: circle;
-    text-align: left;
-    color: #2E3192;
+  .conteudo-duvidas__container-bloco-caixa2-caixa--cor--color{
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+  }
+  .cor1{
+    background: #18E834;
+  }
+  .cor2{
+    background: #FCAF17;
+  }
+  .cor3{
+    background: #FF0000;
+  }
+  .cor4{
+    background: #F26522;
+  }
+  .conteudo-duvidas__container-bloco-caixa2-caixa--texto{
+    width: 70%;
+    font-size: 14px;
+    margin-left: 2%;
   }
   .pai-sobre-botao_iniciar{
     width: 10vw;
