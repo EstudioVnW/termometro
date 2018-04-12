@@ -7,9 +7,13 @@
           <img src="../assets/termometro2.svg">
         </div>
         <div class="dados">
-          <input class="dados-email"  placeholder="Email"></input>
-          <input class="dados-senha"  placeholder="Senha"></input>
+          <input class="dados-email" type="text" name="email"  placeholder="Email"></input>
+          <input class="dados-senha" type="password" name="senha" placeholder="Senha"></input>
+          <div>
+          <router-link to="professor-inicial">
           <button class="dados-button">Entrar</button>
+          </router-link>
+          </div>
         </div>
         <div class="acesso">
           <p class="acesso-PrimeiroPassos">Primeiro Acesso</p>
@@ -32,8 +36,28 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+    document.getElementById('postForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      var email = document.getElementById('postEmail').value;
+      var senha = document.getElementById('postSenha').value;
+
+      axios.post('http://jsonplaceholder.typicode.com/users',{
+        email: email,
+        senha: senha
+      }).then(function(result){
+        postResults = document.getElementById('postResults');
+
+        li = document.createElement('li');
+        li.textContent = result.data.email;
+
+        postResults.appendChild(li);
+      }).cath(function(error) {
+        console.log(error)
+      });
+      })
+    }
   }
-}
 </script>
 
 
