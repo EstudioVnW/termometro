@@ -37,6 +37,7 @@
         </div>
       </div>
       <div class="conteudo-duvidas__container-bloco-caixa2">
+          <h3>LEGENDA</h3>
             <div class="conteudo-duvidas__container-bloco-caixa2-caixa">
               <div class="conteudo-duvidas__container-bloco-caixa2-caixa--cor">
                 <div class="conteudo-duvidas__container-bloco-caixa2-caixa--cor--color cor1"></div>
@@ -189,6 +190,7 @@ export default {
     flex-direction: column;
     justify-content: space-around;
     margin: 0;
+    padding: 0 0 0 20px;
   }
   .pai-centro_duvidas-retangulo-expecificaçoes{
     display: flex;
@@ -269,7 +271,7 @@ export default {
     width: 39vw;
     flex-direction: column;
     text-align: left;
-    margin: 25px 0 0 0;
+    margin: 25px 0 0 20px;
     justify-content: center;
     color: #2E3192;
   }
@@ -280,11 +282,22 @@ export default {
     width: 25%;
     height: 25vh;
     padding: 1% 0;
+    margin: 50px 0 0 0;
+  }
+
+  h3{
+    width: 100px;
+    height: 20px;
+    color: #2E3192;
+    margin: 0 0 0 40px;
+    font-size: 0.8em;
+    text-align: center;
   }
   .conteudo-duvidas__container-bloco-caixa2-caixa{
-    width: 100%;
+    width: 60%;
     display: flex;
     align-items: center;
+    margin: 0 auto;
   }
   .conteudo-duvidas__container-bloco-caixa2-caixa--cor{
     width: 22px;
@@ -316,6 +329,7 @@ export default {
     width: 70%;
     font-size: 14px;
     margin-left: 2%;
+    text-align: left;
   }
   .pai-sobre-botao_iniciar{
     width: 10vw;

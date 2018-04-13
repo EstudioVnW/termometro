@@ -7,9 +7,11 @@
       </div>
       <div  class="container-perfil-professor">
         <img class="container-perfil-professor-foto" src="../assets/foto-perfil.png">
-        <p class="container-perfil-professor-nome">Rômulo Tunala</p>
-        <p class="container-perfil-professor-proficao">Professor</p>
-        <p class="container-perfil-professor-local">Cpx.alemão</p>
+        <div class="texto">
+          <p class="container-perfil-professor-nome">Rômulo Tunala</p>
+          <p class="container-perfil-professor-proficao">Professor</p>
+          <p class="container-perfil-professor-local">Cpx.alemão</p>
+        </div>
       </div>
       <div class="container-perfil-button">
         <input class="container-perfil-button-sair" type="button" name="botao-ok" value="Sair">
@@ -107,49 +109,67 @@
 }
 
 .container-perfil{
-  display: flex;
-  width: 19.5vw;
-  border: 2px solid #2E3192;
-  background-color: #FFFFFF;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 10px;
-  justify-content: space-around;
+  margin:0 0 0 41px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    background-color: #FFFFFF; 
+    border:2px solid #2E3192; 
+    padding: 5px;
+    width:15vw;
+    height: 88vh;
+    border-radius: 11.5px;
 }
 
 .container-perfil-logo{
-  display: flex;
-  width: 15vw;
-  align-items: center;
-  justify-content: center;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-perfil-logo-termometro{
-  height: 95.67px;
-  width: 60px;
+  width: 33px;
+    height: 96px;
+    margin: 0;
 }
 
 .container-perfil-logo-vainaweb{
-  height: 54.47px;
-  width: 76.54px;
+  width: 76px;
+    height: 54px;
+    margin: 0;
 }
 
 .container-perfil-professor{
   color: #2E3192;
+  margin: 0;
 }
 
 .container-perfil-professor-foto{
-  width: 170px;
-  height: 170px;
-  border-radius: 50%;
-  border: 2px solid #2E3192;
-  background-color: #F26522;
+  width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    margin: 0 35px 0;
+    background-color: #F26522;
+    border-color: #2E3192;
+    border-width: 0,1em;
+    border-style: solid;
 }
 
 .container-perfil-professor-nome{
   margin: 0;
   font-size: 1em;
     font-family: Ministry, Heavy, sans-serif;
+    font-weight: bold;
+}
+.texto{
+  color: #2E3192;
+    font-size: 0.9em;
+    text-align: center;
+    line-height: 1.3em;
 }
 
 .container-perfil-professor-proficao{
@@ -185,6 +205,7 @@
   border-radius: 10px;
   background-color: #fff;
   width: 66vw;
+  height: 90vh;
   text-align: left; 
   
 }
@@ -258,7 +279,7 @@ input[type=radio]:checked::after{
 .container-aula-polo{
   font-family: Ministry, Heavy, sans-serif;
   font-weight: bolder;
-  font-size: 2em;
+  font-size: 1.6em;
   margin: 25px 0 11px 0;
 }
 
@@ -286,7 +307,7 @@ input[type=radio]:checked::after{
 .container-aula-modulo{ 
   font-family: Ministry, Heavy, sans-serif;
   font-weight: bolder;
-  font-size: 2em;
+  font-size: 1.6em;
   margin: 31px 0 11px 0;
 }
 
@@ -308,7 +329,7 @@ input[type=radio]:checked::after{
 .container-aula-turno{
   font-family: Ministry, Heavy, sans-serif;
   font-weight: bolder;
-  font-size: 2em;
+  font-size: 1.6em;
   margin: 31px 0 11px 0;
 }
 
@@ -341,7 +362,7 @@ input[type=radio]:checked::after{
 .container-aula-conteudo{
   font-family: Ministry, Heavy, sans-serif;
   font-weight: bolder;
-  font-size: 2em;
+  font-size: 1.6em;
 
 }
 
@@ -358,7 +379,7 @@ input[type=radio]:checked::after{
 .container-button{
   display: flex;
   justify-content: space-between;
-  margin: 25px 50px 0 22px;
+  margin: 28px 50px 0 22px;
 }
 
 .container-button-voltar{
