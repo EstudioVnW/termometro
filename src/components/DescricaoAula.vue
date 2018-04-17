@@ -85,8 +85,13 @@
         </div>              
       </div>
       <div class="container-button">
+        
           <button class="container-button-voltar">Voltar</button> 
-          <button class="container-button-chamada">Fazer Chamada</button>       
+          <div>
+          <router-link to="diario-de-classe">
+          <button class="container-button-chamada">Fazer Chamada</button>
+          </router-link>
+          </div>       
       </div>  
     </div>
   </section>
@@ -207,6 +212,7 @@
   width: 66vw;
   height: 90vh;
   text-align: left; 
+  padding:0 60px 0 18px;
   
 }
 

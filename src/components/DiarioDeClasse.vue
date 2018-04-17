@@ -226,7 +226,11 @@
       </div>
       <div class="botoes">
           <input  class="button-Volta" type="button" name="botao-ok" value="Voltar">
+          <div>
+          <router-link to="professor-inicial">
           <input  class="INICIAR" type="button" name="botao-ok" value="Iniciar Aula">
+          </router-link>
+          </div>
           </div>
         </div>
       </div>

@@ -178,7 +178,7 @@ export default {
     font-weight:bold;
   }
   .pai-avaliaçao-da-aula-termometro_img{
-    height: 300px;
+    height: 271px;
     width: 107px;
     margin: 0;
   }
@@ -193,16 +193,16 @@ export default {
     justify-content: flex-end;
     height: 50vh;
     align-self: center;
-    padding: 10px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
   }
   .pai-avaliaçao-da-aula-sobre_aula{
     width: 18vw;
-    height: 7vh;
+    height: 16vh;
     text-align: left;
     justify-content: flex-end;
     margin: 0;
     font-weight: normal;
-    font-size: 1em;
+    font-size: 1.2em;
   }
   .pai-avaliaçao-da-aula-botao{
     align-self: flex-end;

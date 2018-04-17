@@ -20,17 +20,29 @@
       <div class="column-aula">
         <p class="descricao">Aqui você expõe qual será o conteúdo da aula e marca a presença dos estudantes.</p>
         <img src="../assets/aulas.svg">
+        <div>
+        <router-link to="descricao-aula">
         <button class="button"><h4>Centro de aulas</h4></button>
+        </router-link>
+        </div>
       </div>
       <div class="column-duvida">
         <p class="descricao">Local onde ficam armazenadas as dùvidas que aparecem durante a aula.</p>
         <img src="../assets/duvidas.svg">
+        <div>
+        <router-link to="professor-duvida">
         <button class="button"><h4>Centro de dúvidas</h4></button>
+        </router-link>
+        </div>
       </div>
       <div class="column-analisa">
         <p class="descricao">Nesta seção você vai encontrar as avaliações de todas as aulas realizadas durante o módulo.</p>
         <img src="../assets/analisa.svg">
+        <div>
+        <router-link to="resultado-avaliacao-aula">
         <button class="button"><h4>Balanço de Aulas</h4></button>
+        </router-link>
+        </div>
       </div>
     </div>
     
@@ -119,7 +131,7 @@ export default {
     display: flex;
     flex-flow: column;
     justify-content: space-around;
-    background-color: #FFF8DC; 
+    background-color: #FFFFFF; 
     border:2px solid #2E3192; 
     padding: 5px;
     width:15vw;
@@ -198,7 +210,7 @@ h4{
                 display: flex;
                 flex-flow: column-reverse;
                 justify-content: space-around;
-                background-color: #FFF8DC; 
+                background-color: #FFFFFF; 
                 border:2px solid #2E3192; 
                 padding: 5px;
                 width: 16vw;
@@ -212,7 +224,7 @@ h4{
     display: flex;
     flex-flow: column-reverse;
     justify-content: space-around;
-    background-color: #FFF8DC; 
+    background-color: #FFFFFF; 
     border:2px solid #2E3192; 
     padding: 5px;
     width: 16vw;
@@ -225,7 +237,7 @@ h4{
     display: flex;
     flex-flow: column-reverse;
     justify-content: space-around;
-    background-color: #FFF8DC; 
+    background-color: #FFFFFF; 
     border:2px solid #2E3192; 
     padding: 5px;
     width: 16vw;
