@@ -1,20 +1,6 @@
 <template>
   <div class="pai">
-    <div class="pai-sobre-o-professor">
-      <div class="pai-sobre-inicio">
-        <img class="pai-sobre-inicio-termometro-img" src="../assets/termometro-logo.svg">
-        <img class="pai-sobre-inicio-logo-img" src="../assets/logo-VNW.svg">
-      </div>
-      <div class="pai-sobre-expecificacoes-prof" >
-        <img class="pai-sobre-foto-professor-perfil" src="../assets/foto-perfil.png">
-        <div class="texto">
-          <h4 class="pai-sobre-expecificacoes-prof-nome">Rômulo Tunala</h4>
-          <h5 class="pai-sobre-expecificacoes-prof-proficao">Professor</h5>
-          <h5 class="pai-sobre-expecificacoes-prof-local" >Cpx.alemão</h5>
-        </div>
-      </div>  
-      <input class="pai-sobre-botao" type="button" name="botao-ok" value="Sair">
-    </div>
+    <PerfilProfessor></PerfilProfessor>
     <div class="pai-avaliaçao-da-aula">
       <div class="pai-avaliaçao-da-aula-conteiner">
         <h1 class="pai-avaliaçao-da-aula-conteiner-titulo">Avaliação da Aula:</h1>
@@ -39,6 +25,7 @@
 </template>
 
 <script>
+import PerfilProfessor from './PerfilProfessor.vue'  
 export default {
     name: 'recados',
     data () {
@@ -55,7 +42,10 @@ export default {
         return this.usuario.recados.push(this.recado),
              this.recado = ''
       }
-    }
+    },
+    components: {
+    PerfilProfessor
+  }
 }
   
 </script>
@@ -147,10 +137,12 @@ export default {
     margin: 0 ;
     background-color: #FFFFFF;
     width: 80vw;
+    height: 88vh;
     border-color:#2E3192;
     border-width: 2px;
     border-radius: 10px;
     border-style: solid;
+    box-sizing: border-box;
   }
   .pai-avaliaçao-da-aula-conteiner{
     display: flex;

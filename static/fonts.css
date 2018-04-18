@@ -1,0 +1,41 @@
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * ministry:
+ *   - http://typekit.com/eulas/00000000000000003b9ad972
+ *   - http://typekit.com/eulas/00000000000000003b9ad974
+ *   - http://typekit.com/eulas/00000000000000003b9ad994
+ *   - http://typekit.com/eulas/00000000000000003b9ad995
+ *
+ * © 2009-2018 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2017-02-15 18:44:30 UTC"}*/
+
+@import url("https://p.typekit.net/p.css?s=1&k=eqk2gym&ht=tk&f=27896.27898.27930.27931&a=3892707&app=typekit&e=css");
+
+@font-face {
+font-family:"ministry";
+src:url("https://use.typekit.net/af/84cfef/00000000000000003b9ad972/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"),url("https://use.typekit.net/af/84cfef/00000000000000003b9ad972/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"),url("https://use.typekit.net/af/84cfef/00000000000000003b9ad972/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
+font-style:normal;font-weight:300;/* Light */
+}
+
+@font-face {
+font-family:"ministry";
+src:url("https://use.typekit.net/af/779765/00000000000000003b9ad994/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/779765/00000000000000003b9ad994/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/779765/00000000000000003b9ad994/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-style:normal;font-weight:400; /*Medium*/
+}
+
+@font-face {
+font-family:"ministry";
+src:url("https://use.typekit.net/af/9c4919/00000000000000003b9ad995/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff2"),url("https://use.typekit.net/af/9c4919/00000000000000003b9ad995/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff"),url("https://use.typekit.net/af/9c4919/00000000000000003b9ad995/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("opentype");
+font-style:normal;font-weight:500; /*Bold*/
+}
+
+@font-face {
+font-family:"ministry";
+src:url("https://use.typekit.net/af/88cfef/00000000000000003b9ad974/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/88cfef/00000000000000003b9ad974/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/88cfef/00000000000000003b9ad974/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+font-style:normal;font-weight:700; /*Heavy*/
+}

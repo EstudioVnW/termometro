@@ -1,25 +1,6 @@
 <template>
   <div class="body">
-    <div class="conteudo-descricao">
-      <div class="conteudo-descricao__img">
-        <img class="conteudo-descricao__img--logo" src="../assets/termometro-logo.svg">
-        <img class="conteudo-descricao__img--vnw" src="../assets/logo-VNW.svg">
-      </div>
-      <div class="conteudo-descricao__prof" >
-        <img class="conteudo-descricao__prof--img" src="../assets/foto-perfil.png">
-          <h4 class="conteudo-descricao__prof--nome">Rômulo Tunala</h4>
-          <h5 class="conteudo-descricao__prof--usuario">Professor</h5>
-          <h5 class="conteudo-descricao__prof--local" >Cpx.alemão</h5>
-      </div>  
-      <div class="conteudo-descricao__detalhes">
-          <p class="conteudo-descricao__detalhes--turma">{{modulo}} - {{turma}}</p>
-          <p class="conteudo-descricao__detalhes--turno">Manhã</p>
-          <p class="conteudo-descricao__detalhes--materia">Introdução ao CSS3</p>
-          <p class="conteudo-descricao__detalhes--sobre">
-            Esse módulo foi criado para você que quer iniciar no universo da programação. Nele você vai aprender a criar sites incríveis que funcionem em diferentes tamanhos de tela como computadores desktops, celulares, tablets, TVs e muito mais. É o primeiro passo para você desenvolver páginas para sites, aplicativos mobile e sistemas web e desktop.
-          </p>
-      </div>
-    </div>
+    <PerfilProfessor descricao="true"></PerfilProfessor>
     <div class="conteudo-duvidas">
       <div class="conteudo-duvidas__container">
         <h1 class="conteudo-duvidas__container--titulo">Centro de Dúvidas</h1>
@@ -57,7 +38,7 @@
             </div>
           </div>
         </div>
-        <div class="conteudo-duvidas__container-bloco2">
+        <div class="conteudo-duvidas__container-bloco2" v-if="!professor">
             <input class="conteudo-duvidas__container-bloco2--input" v-model="recado" v-on:keyup.enter="addRecado" placeholder="Digite a sua dúvida">
             <button class="conteudo-duvidas__container-bloco2--button" v-on:click="addRecado">
               Enviar dúvida
@@ -69,15 +50,18 @@
 </template>
 
 <script>
+  import PerfilProfessor from './PerfilProfessor.vue'
 export default {
   name: 'DuvidaAluno',
+  props: ['professor'],
+  created() {
+    this.professor = this.$route.query.professor;
+  },
   data () {
     return {
-      modulo: 'Modulo I',
-      turma: 'Turma 2',
-      usuario: {
+            usuario: {
         recados:[
-          'Não ficou claro como o sistema funciona!','Não entendi exatamente qual a ordem correta de usar os caractéres na hora de fechar uma tag.','Como faz para colocar um video rodando automaticamente quando a página carregar?','Como faz para colocar um video rodando automaticamente quando a página carregar?','Como faz para colocar um video rodando automaticamente quando a página carregar?'
+          
         ],
       },
     }
@@ -87,6 +71,9 @@ export default {
       this.usuario.recados.push(this.recado)
       this.recado = ''
     }
+  },
+  components: {
+    PerfilProfessor
   }
 }
 </script> 
@@ -100,90 +87,11 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-  }
-  .conteudo-descricao{
-    width: 16vw;
-    padding: 2% 0;
-    background-color: #fff;
-    border: solid 2px #2E3192;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-  }
-  .conteudo-descricao__img{
-    margin-bottom: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .conteudo-descricao__img--logo{
-    height: 12vh; 
-  }
-  .conteudo-descricao__img--vnw{
-    height: 7vh;
-  }
-  .conteudo-descricao__prof{
-    margin: 3% 0;
-    color: #2E3192;
-  }
-  .conteudo-descricao__prof--img{
-    width: 7vw;
-    margin: 3% 0;
-    border: solid 2px #2E3192;
-    border-radius: 100%;
-    background-color: #F26522;
-  }
-  .conteudo-descricao__prof--nome{
-    margin: 0;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  .conteudo-descricao__prof--usuario{
-    margin: 0;
-    font-size: 14px;
-    font-weight: normal;
-  }
-  .conteudo-descricao__prof--local{
-    margin: 0;
-    font-size: 16px;
-    font-weight: normal;    
-  }
-  .conteudo-descricao__detalhes{
-    width: 90%;
-    height: 55vh;
-    margin: 0;
-    color: #2E3192;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    font-weight: normal;
-  }
-  .conteudo-descricao__detalhes--turma{
-    margin: 0;
-    font-size: 16px;
-    font-weight: bold;
-    color: #FF611E;
-  }
-  .conteudo-descricao__detalhes--turno{
-    margin: 0;
-    font-weight: bold;
-  }
-  .conteudo-descricao__detalhes--materia{
-    font-weight: bold;
-    margin: 5% 0;
-  }
-  .conteudo-descricao__detalhes--sobre{
-    min-height: 25vh;
-    width: 14vw;
-    margin: 0;
-    font-size: 14px;
-    overflow: auto;
-
   }
   .conteudo-duvidas{
     width: 80vw;
+    height: 88vh;
     background-color: #fff;
     border: solid 2px #2E3192;
     border-radius: 10px;
@@ -209,7 +117,7 @@ export default {
   }
   .conteudo-duvidas__container-bloco-caixa{
     width: 40vw;
-    max-height: 55vh;
+    height: 55vh;
     margin-bottom: 2%;
     padding-right: 1%;
     overflow: auto;

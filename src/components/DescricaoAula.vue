@@ -1,22 +1,6 @@
 <template>
   <section class="container">
-    <div class="container-perfil">
-      <div class="container-perfil-logo">
-        <img class="container-perfil-logo-termometro" src="../assets/termometro2.svg">
-        <img class="container-perfil-logo-vainaweb" src="../assets/logo-vainaweb.svg">
-      </div>
-      <div  class="container-perfil-professor">
-        <img class="container-perfil-professor-foto" src="../assets/foto-perfil.png">
-        <div class="texto">
-          <p class="container-perfil-professor-nome">Rômulo Tunala</p>
-          <p class="container-perfil-professor-proficao">Professor</p>
-          <p class="container-perfil-professor-local">Cpx.alemão</p>
-        </div>
-      </div>
-      <div class="container-perfil-button">
-        <input class="container-perfil-button-sair" type="button" name="botao-ok" value="Sair">
-      </div>
-    </div>
+    <PerfilProfessor></PerfilProfessor>
     <div class="container-aula">
       <div class="container-aula-texto">
         <div>
@@ -98,7 +82,18 @@
 </template>
 
 <script>
-  
+  import PerfilProfessor from './PerfilProfessor.vue'
+export default {
+  name: 'HelloWorld',
+  data () {
+    return {
+      msg: 'Welcome to Your Vue.js App'
+    }
+  },
+  components: {
+    PerfilProfessor
+  }
+}
 </script>
 
 <style type="text/css">

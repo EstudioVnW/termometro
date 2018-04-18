@@ -4,7 +4,7 @@
       <!-- <img src="../assets/DSC_1866.jpg"> -->
       <div class="container">
         <div class="logo-Termometro">
-          <img src="../assets/termometro2.svg">
+          <img src="../assets/termometro.svg">
         </div>
         <div class="dados">
           <input class="dados-email" type="text" name="email"  placeholder="Email"></input>

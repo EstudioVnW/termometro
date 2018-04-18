@@ -1,23 +1,7 @@
 <template>
   <section>
     <img src="">
-    <div class="column-perfil">
-      <div class="logos">
-        <img src="../assets/termometro.svg" class="termometro">
-        <img src="../assets/logo-vainaweb.svg" class="logo">
-      </div>
-      <div class="user">
-        <img src="../assets/romulo.jpg" class="perfil">
-        <div class="text-user">
-          <h3>Rômulo</h3>
-          <p>Professor</p>
-          <p>Cpx. Alemão</p>
-        </div>
-      </div>
-      <input  class="button1" type="button" name="botao-ok" value="Sair">
-    </div>
-
-
+    <PerfilProfessor></PerfilProfessor>
     <div class="tronco">
         <div class="corpo">
           <div class="classe">
@@ -46,173 +30,173 @@
    </tr>
    <tr><td>1</td>
     <td class="names"> Alan Fereira de Oliveira</td> 
-    <td class="marcacao"> x </td>
-    <td class="marcacao"> x </td>
-    <td class="marcacao"> x </td>
-    <td class="marcacao"> x </td>
-    <td class="marcacao"> x </td>
-    <td class="marcacao"></td>
-    <td class="marcacao"></td>
-    <td class="marcacao"></td> 
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"> <input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td> 
    </tr>
    <tr><td>2</td> 
     <td class="names">Beatriz Regina Ferreira Mendes</td>
-     <td class="marcacao"> x </td>
-    <td class="marcacao"> x </td>
-    <td class="marcacao"> x </td>
-    <td class="marcacao"> x </td>
-    <td class="marcacao"> x </td>
-    <td class="marcacao"></td>
-    <td class="marcacao"></td>
-    <td class="marcacao"></td> 
+     <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"> <input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td> 
    </tr>
    <tr>
     <td>3</td>
     <td class="names">Daniella Machado Lima</td> 
-    <td class="marcacao"> x </td>
-    <td class="marcacao"> x </td>
-    <td class="marcacao"> x </td>
-    <td class="marcacao"> x </td>
-    <td class="marcacao"> x </td>
-    <td class="marcacao"></td>
-    <td class="marcacao"></td>
-    <td class="marcacao"></td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"> <input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td> 
   </tr>
    <tr>
     <td>4</td> 
     <td class="names">Fabio Minervino da Silva</td> 
-    <td class="marcacao"> x </td>
-    <td class="marcacao"> x </td>
-    <td class="marcacao"> x </td>
-    <td class="marcacao"> x </td>
-    <td class="marcacao"> x </td>
-    <td class="marcacao"></td>
-    <td class="marcacao"></td>
-    <td class="marcacao"></td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"> <input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td> 
   </tr>
    <tr>
     <td>5</td> 
     <td class="names">João Victor Pinto dos Santos</td>
-     <td class="marcacao"> x </td>
-    <td class="marcacao"> x </td>
-    <td class="marcacao"> x </td>
-    <td class="marcacao"> x </td>
-    <td class="marcacao"> x </td>
-    <td class="marcacao"></td>
-    <td class="marcacao"></td>
-    <td class="marcacao"></td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"> <input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td> 
    </tr>
    <tr>
     <td>6</td> 
     <td class="names"> Matheus Pereira Santana de Oliveira
  </td> 
-    <td class="marcacao"> P </td>
-    <td class="marcacao"> P </td>
-    <td class="marcacao"> F </td>
-    <td class="marcacao"> F </td>
-    <td class="marcacao"> F </td>
-    <td class="marcacao"></td>
-    <td class="marcacao"></td>
-    <td class="marcacao"></td> 
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"> <input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td> 
   </tr>
    <tr>
     <td>7</td> 
     <td class="names">  Pâmela Waleska de Oliveira da Costa
 </td> 
-    <td class="marcacao"> P </td>
-    <td class="marcacao"> F </td>
-    <td class="marcacao"> P </td>
-    <td class="marcacao"> P </td>
-    <td class="marcacao"> F </td>
-    <td class="marcacao"></td>
-    <td class="marcacao"></td>
-    <td class="marcacao"></td> 
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"> <input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>  
   </tr>
    <tr>
     <td>8</td> 
     <td class="names">Rodrigo Francisco Gonçalves
 </td> 
-    <td class="marcacao"> P </td>
-    <td class="marcacao"> x </td>
-    <td class="marcacao"> P </td>
-    <td class="marcacao"> x </td>
-    <td class="marcacao"> x </td>
-    <td class="marcacao"></td>
-    <td class="marcacao"></td>
-    <td class="marcacao"></td> 
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"> <input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>  
   </tr>
    <tr>
     <td>9</td>
      <td class="names">Agenor Junio</td> 
-     <td class="marcacao"> x </td>
-    <td class="marcacao"> x </td>
-    <td class="marcacao"> x </td>
-    <td class="marcacao"> x </td>
-    <td class="marcacao"> x </td>
-    <td class="marcacao"></td>
-    <td class="marcacao"></td>
-    <td class="marcacao"></td>
+     <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"> <input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td> 
    </tr>
    <tr>
     <td>10</td> 
     <td class="names">Tarcisio Adelson do Nascimento</td>
-     <td class="marcacao"> x </td>
-    <td class="marcacao"> x </td>
-    <td class="marcacao"> P </td>
-    <td class="marcacao"> P</td>
-    <td class="marcacao"> x </td>
-    <td class="marcacao"></td>
-    <td class="marcacao"></td>
-    <td class="marcacao"></td> 
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"> <input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>  
    </tr>
    <tr>
     <td>11</td>
      <td class="names">Thayná Barcelos Santos de Oliveira</td> 
-     <td class="marcacao"> x </td>
-    <td class="marcacao"> x </td>
-    <td class="marcacao"> P </td>
-    <td class="marcacao"> x </td>
-    <td class="marcacao"> x </td>
-    <td class="marcacao"></td>
-    <td class="marcacao"></td>
-    <td class="marcacao"></td> 
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"> <input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>  
    </tr>
    <tr>
     <td>12</td> 
     <td class="names">Thiago Brandão da Barros</td>
-     <td class="marcacao"> x </td>
-    <td class="marcacao"> P </td>
-    <td class="marcacao"> x </td>
-    <td class="marcacao"> P </td>
-    <td class="marcacao"> x </td>
-    <td class="marcacao"></td>
-    <td class="marcacao"></td>
-    <td class="marcacao"></td>
+     <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"> <input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td> 
    </tr>
    <tr>
     <td>13</td>
      <td class="names">Veridiane Aparecida Vidal da Silva</td> 
-     <td class="marcacao"> P </td>
-    <td class="marcacao"> P</td>
-    <td class="marcacao"> X </td>
-    <td class="marcacao"> P </td>
-    <td class="marcacao"> P </td>
-    <td class="marcacao"></td>
-    <td class="marcacao"></td>
-    <td class="marcacao"></td>
+     <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"> <input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td> 
    </tr>
    <tr>
     <td>14</td> 
     <td class="names">Yasmin Miranda dos Santos</td>
 
-    <td class="marcacao"> P </td>
-    <td class="marcacao"> P </td>
-    <td class="marcacao"> P </td>
-    <td class="marcacao"> P </td>
-    <td class="marcacao"> P </td>
-    <td class="marcacao"></td>
-    <td class="marcacao"></td>
-    <td class="marcacao"></td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"> <input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td>
+    <td class="marcacao"><input type="text" name="" maxlength="1"/> </td> 
    </tr>
 </table>
       <div class="legenda">
@@ -239,12 +223,16 @@
   </section>
 </template>
   <script>
-    export default {
-  name: 'Chamada',
+    import PerfilProfessor from './PerfilProfessor.vue'
+export default {
+  name: 'HelloWorld',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  components: {
+    PerfilProfessor
   }
 }
 </script>
@@ -350,9 +338,11 @@
 }
 .Chamada{
   background: #FFFFFF;
-  width: 600px;
+  min-width: 600px;
   color:#0F2B92;
-  font-family: 'Ministry';
+  font-family: ministry, sans-serif;
+  font-style: normal;
+  font-weight: 400;
   border-color: #FFAC2D;
   border: 1px solid #FFAC2D;
   border-collapse: collapse;
@@ -360,18 +350,42 @@
 }
 
 .marcacao{
+  width: 17px;
+  height: 17px;
   color: #FF611E;
   text-align: center;
   font-weight: bold;
+
+}
+
+.marcacao input{
+  width: 100%;
+  border: none;
+  text-align: center;
+  font-family: ministry, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color:#FF611E;
+  font-size: 1em;
+}
+
+.marcacao input:focus{
+  outline:none;
+}
+
+
+tr td{
+  border: 1px solid #FFAC2D;
+  font-family: ministry, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  min-width: 30px;
+
 }
 
 .names{
   text-align: left;
-}
-
-tr td{
-  border: 1px solid #FFAC2D;
-  font-size: 0.7em;
+  font-size: 0.9em;
 }
 
 
@@ -406,7 +420,7 @@ h2{
 }
 
 .legenda{
-  width: 89.16px;
+  width: 100px;
   height: 99px;
   margin: 0 0 3px 0;
 }
