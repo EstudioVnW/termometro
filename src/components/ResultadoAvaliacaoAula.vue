@@ -10,7 +10,11 @@
           
         </div>  
         <h3 class="pai-avaliaçao-da-aula-sobre_aula">A aula de hoje recebeu uma avaliação menor que 5. <br>Veja os comentarios dos estudantes.</h3>
+        <div>
+        <router-link to="professor-inicial">
         <input class="pai-avaliaçao-da-aula-botao" type="button" name="botao-ok" value="Voltar">
+        </router-link>
+        </div>
       </div>  
       <div class="pai-avaliaçao-da-aula-comentarios">
         <h1 class="pai-avaliaçao-da-aula-comentarios-h1">Comentários</h1>
@@ -137,7 +141,7 @@ export default {
     margin: 0 ;
     background-color: #FFFFFF;
     width: 80vw;
-    height: 88vh;
+    height: 90vh;
     border-color:#2E3192;
     border-width: 2px;
     border-radius: 10px;
@@ -153,6 +157,7 @@ export default {
     color: #2E3192;
     justify-content: space-evenly;
     align-items: center;
+    padding: 0 160px 0 0;
   }
   .pai-avaliaçao-da-aula-conteiner-dupla{
     display: flex;

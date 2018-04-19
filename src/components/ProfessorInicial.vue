@@ -131,7 +131,7 @@ h4{
                 border:2px solid #2E3192; 
                 padding: 5px;
                 width: 16vw;
-                height: 88vh;
+                height: 86vh;
                 border-radius: 11.5px;
 
   }
@@ -145,7 +145,7 @@ h4{
     border:2px solid #2E3192; 
     padding: 5px;
     width: 16vw;
-    height: 88vh;
+    height: 86vh;
     border-radius: 11.5px;
   }
 
@@ -158,7 +158,7 @@ h4{
     border:2px solid #2E3192; 
     padding: 5px;
     width: 16vw;
-    height: 88vh;
+    height: 86vh;
     border-radius: 11.5px;
   }
 </style>

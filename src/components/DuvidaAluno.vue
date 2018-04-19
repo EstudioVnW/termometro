@@ -1,6 +1,6 @@
 <template>
   <div class="body">
-    <PerfilProfessor descricao="true"></PerfilProfessor>
+    <PerfilProfessor descricao="true" :professor="professor" :precisaMudar="true"></PerfilProfessor>
     <div class="conteudo-duvidas">
       <div class="conteudo-duvidas__container">
         <h1 class="conteudo-duvidas__container--titulo">Centro de Dúvidas</h1>
@@ -43,6 +43,13 @@
             <button class="conteudo-duvidas__container-bloco2--button" v-on:click="addRecado">
               Enviar dúvida
             </button>
+        </div>
+        <div class="container-button">
+          <div>
+          <router-link to="professor-inicial" v-if="professor">
+          <button class="container-button-voltar">Voltar</button>
+          </router-link>
+          </div>
         </div>
       </div>
     </div>
@@ -101,12 +108,13 @@ export default {
   .conteudo-duvidas__container{
     height: 90vh;
     width: 60vw;
-    margin: 0;
     text-align: left;
     color: #2E3192;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
+
   }
   .conteudo-duvidas__container--titulo{
     width: 100%;
@@ -204,4 +212,30 @@ export default {
     color: #fff;
     align-self: center;
   }
+  .container-aula{
+  color: #2E3192;
+  border: 2px solid #2E3192;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 66vw;
+  height: 90vh;
+  text-align: left; 
+  padding:0 60px 0 18px;
+  
+}
+.container-button{
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 50px 0 0;
+}
+.container-button-voltar{
+  font-family: Ministry, Heavy, sans-serif;
+  font-size: 1em;
+  width: 113.67px;
+  color: #2E3192;
+  border: 2px solid #2E3192;
+  background-color: #fff;
+  border-radius:10px;
+    padding: 10px;
+}
 </style>

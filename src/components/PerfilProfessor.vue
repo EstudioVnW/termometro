@@ -20,14 +20,24 @@
             Esse módulo foi criado para você que quer iniciar no universo da programação. Nele você vai aprender a criar sites incríveis que funcionem em diferentes tamanhos de tela como computadores desktops, celulares, tablets, TVs e muito mais.
           </p>
       </div>
-      <input  class="button1" type="button" name="botao-ok" value="Sair">
+      <div>
+      <router-link to="/">
+      <input  class="button1" type="button" name="botao-ok" value="SairP" v-if="!precisaMudar || professor">
+      </router-link>
+      </div>
+      <div>
+      <router-link to="avaliando-aprendizado">
+      <input  class="button1" type="button" name="botao-ok" value="SairA" v-if="!professor && precisaMudar">
+      </router-link>
+      </div>
+
     </div>
 </template>
 
 <script>
 	export default {
 		name: 'PerfilProfessor',
-		props: ['descricao'],
+		props: ['descricao', 'professor', 'precisaMudar'],
   data () {
     return {
       modulo: 'Modulo I',
@@ -42,7 +52,7 @@
 
 .column-perfil{
     width:16vw;
-    height: 88vh;
+    height: 90vh;
     background-color: #FFFFFF; 
     border:2px solid #2E3192; 
     border-radius: 11.5px;

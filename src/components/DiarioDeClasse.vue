@@ -209,7 +209,13 @@
       </p>
       </div>
       <div class="botoes">
+          <div>
+          <router-link to="professor-inicial">
           <input  class="button-Volta" type="button" name="botao-ok" value="Voltar">
+          <input  class="button-Volta" type="button" name="botao-ok" value="Voltar" v-if="!professor && precisaMudar>
+
+          </router-link>
+          </div>
           <div>
           <router-link to="professor-inicial">
           <input  class="INICIAR" type="button" name="botao-ok" value="Iniciar Aula">

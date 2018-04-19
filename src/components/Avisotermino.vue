@@ -2,7 +2,7 @@
 	<section class="container">
 		<div class="orange">
 			<div class="imagem">
-				<img class="imagem-termometro" src="../assets/termometro2.svg">
+				<img class="imagem-termometro" src="../assets/termometro.svg">
 				<img class="imagem-vainaweb" src="../assets/logo-vainaweb.svg">
 			</div>
 			<div class="texto">

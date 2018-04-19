@@ -69,8 +69,11 @@
         </div>              
       </div>
       <div class="container-button">
-        
-          <button class="container-button-voltar">Voltar</button> 
+          <div>
+          <router-link to="professor-inicial">
+          <button class="container-button-voltar">Voltar</button>
+          </router-link>
+          </div>
           <div>
           <router-link to="diario-de-classe">
           <button class="container-button-chamada">Fazer Chamada</button>
