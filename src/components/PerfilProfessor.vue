@@ -1,4 +1,4 @@
-<template>    
+<template>
     <div class="conteudo">
       <div class="conteudo__logos">
         <img class="conteudo__logos--termometro" src="../assets/termometro.svg">
@@ -143,7 +143,5 @@
   font-style: normal;
   font-weight: 700;
   color: #2E3192;
-
 }
-
 </style>
