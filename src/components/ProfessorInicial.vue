@@ -1,36 +1,34 @@
 <template>
   <section>
+    <PerfilProfessor></PerfilProfessor>
     
-    <div class="column-perfil">
-      <div class="logos">
-        <img src="../assets/termometro.svg" class="termometro">
-        <img src="../assets/logo-vainaweb.svg" class="logo">
-      </div>
-      <div class="user">
-        <img src="../assets/romulo.jpg" class="perfil">
-        <div class="text-user">
-          <h3>Rômulo</h3>
-          <p>Professor</p>
-          <p>Cpx. Alemão</p>
-        </div>
-      </div>
-      <input  class="button1" type="button" name="botao-ok" value="Sair">
-    </div>
     <div class="column">
       <div class="column-aula">
         <p class="descricao">Aqui você expõe qual será o conteúdo da aula e marca a presença dos estudantes.</p>
         <img src="../assets/aulas.svg">
+        <div>
+        <router-link to="descricao-aula">
         <button class="button"><h4>Centro de aulas</h4></button>
+        </router-link>
+        </div>
       </div>
       <div class="column-duvida">
         <p class="descricao">Local onde ficam armazenadas as dùvidas que aparecem durante a aula.</p>
         <img src="../assets/duvidas.svg">
+        <div>
+        <router-link :to="{name: 'DuvidaAluno', query: {professor: 1}}">
         <button class="button"><h4>Centro de dúvidas</h4></button>
+        </router-link>
+        </div>
       </div>
       <div class="column-analisa">
         <p class="descricao">Nesta seção você vai encontrar as avaliações de todas as aulas realizadas durante o módulo.</p>
         <img src="../assets/analisa.svg">
+        <div>
+        <router-link to="resultado-avaliacao-aula">
         <button class="button"><h4>Balanço de Aulas</h4></button>
+        </router-link>
+        </div>
       </div>
     </div>
     
@@ -41,12 +39,16 @@
 </template>
 
 <script>
+  import PerfilProfessor from './PerfilProfessor.vue'
 export default {
   name: 'HelloWorld',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  components: {
+    PerfilProfessor
   }
 }
 </script>
@@ -81,79 +83,6 @@ export default {
   .user{
     margin: 0;
   }
-
-  .perfil{
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    vertical-align: middle;
-    margin: 0 35px 0;
-    background-color: #F26522;
-    border-color: #2E3192;
-    border-width: 0,1em;
-    border-style: solid;
-  }
-
-  .logos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .logo{
-    width: 76px;
-    height: 54px;
-    margin: 0;
-  }
-
-  .termometro{
-    width: 33px;
-    height: 96px;
-    margin: 0;
-  }
- 
-  .column-perfil{
-    margin:0 0 0 41px;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-around;
-    background-color: #FFF8DC; 
-    border:2px solid #2E3192; 
-    padding: 5px;
-    width:15vw;
-    height: 88vh;
-    border-radius: 11.5px;
-
-  }
-
-  .text-user{
-    color: #2E3192;
-    font-size: 0.9em;
-    text-align: center;
-    line-height: 0.3em;
-
-}
-
-.saida{
-  color: #2E3192;
-  font-size: 0.9em;
-  font-family: 'Ministry';
-  text-align: center;
-  margin: 0 auto;
-}
-
-.button1{
-  border-color: #2E3192;
-  border-radius: 10px;
-  width: 6vw;
-  height: 5vh;
-  background-color: #FFFFFF;
-  margin: 0 auto;
-  color: #2E3192;
-  font-weight: bold;
-}
 
 .button{
   background-color: #2E3192;
@@ -198,11 +127,11 @@ h4{
                 display: flex;
                 flex-flow: column-reverse;
                 justify-content: space-around;
-                background-color: #FFF8DC; 
+                background-color: #FFFFFF; 
                 border:2px solid #2E3192; 
                 padding: 5px;
                 width: 16vw;
-                height: 88vh;
+                height: 86vh;
                 border-radius: 11.5px;
 
   }
@@ -212,11 +141,11 @@ h4{
     display: flex;
     flex-flow: column-reverse;
     justify-content: space-around;
-    background-color: #FFF8DC; 
+    background-color: #FFFFFF; 
     border:2px solid #2E3192; 
     padding: 5px;
     width: 16vw;
-    height: 88vh;
+    height: 86vh;
     border-radius: 11.5px;
   }
 
@@ -225,11 +154,11 @@ h4{
     display: flex;
     flex-flow: column-reverse;
     justify-content: space-around;
-    background-color: #FFF8DC; 
+    background-color: #FFFFFF; 
     border:2px solid #2E3192; 
     padding: 5px;
     width: 16vw;
-    height: 88vh;
+    height: 86vh;
     border-radius: 11.5px;
   }
 </style>

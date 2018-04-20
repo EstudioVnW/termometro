@@ -2,7 +2,7 @@
   <section class="container">
     <div class="containner-descricao">
       <div class="containner-descricao-imagem">
-        <img class="containner-descricao-imagem-termometro" src="../assets/termometro2.svg">
+        <img class="containner-descricao-imagem-termometro" src="../assets/termometro.svg">
         <img class="containner-descricao-imagem-VaiNaWeb" src="../assets/logo-vainaweb.svg">
       </div>
       <div class="containner-descricao-titulo">
@@ -28,7 +28,11 @@
         <!-- <input v-model="escrevercomentario" placeholder="Deixe aqui o seu comentário"> -->
       </div>
       <div class="container-comentario-button">
+        <div>
+        <router-link to="aviso-termino">
         <button class="container-comentario-button-avaliar">Avaliar aula</button>
+        </router-link>
+        </div>
       </div>
     </div>
   </section>

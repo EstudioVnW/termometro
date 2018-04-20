@@ -1,11 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Longin from '@/components/Longin'
+import Login from '@/components/Login'
 import AvaliandoAprendizado from '@/components/AvaliandoAprendizado'
 import AvisoInicial from '@/components/AvisoInicial'
 import ProfessorInicial from '@/components/ProfessorInicial'
 import DiarioDeClasse from '@/components/DiarioDeClasse'
-import ProfessorDuvida from '@/components/ProfessorDuvida'
 import DuvidaAluno from '@/components/DuvidaAluno'
 import ResultadoAvaliacaoAula from '@/components/ResultadoAvaliacaoAula'
 import DescricaoAula from '@/components/DescricaoAula'
@@ -19,8 +18,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Longin',
-      component: Longin
+      name: 'Login',
+      component: Login
     },
     {
       path: '/avaliando-aprendizado',
@@ -46,11 +45,6 @@ export default new Router({
       path: '/duvida-aluno',
       name: 'DuvidaAluno',
       component: DuvidaAluno
-    },
-    {
-      path: '/professor-duvida',
-      name: 'ProfessorDuvida',
-      component: ProfessorDuvida
     },
     {
       path: '/resultado-avaliacao-aula',

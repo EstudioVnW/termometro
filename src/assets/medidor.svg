@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="9290.5 192.5 164.431 248">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fcaf17;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        font-size: 22px;
+        font-family: Ministry-Medium, Ministry;
+        font-weight: 500;
+      }
+
+      .cls-2 {
+        fill: #f26522;
+      }
+
+      .cls-3 {
+        fill: #0f2b92;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #2e3192;
+      }
+    </style>
+  </defs>
+  <g id="Group_2437" data-name="Group 2437" transform="translate(8849)">
+    <text id="Quente" class="cls-1" transform="translate(532.931 214.5)"><tspan x="0" y="0">Quente</tspan></text>
+    <text id="Morna" class="cls-2" transform="translate(528.931 351.5)"><tspan x="0" y="0">Morna</tspan></text>
+    <text id="Fria" class="cls-3" transform="translate(528.931 435.5)"><tspan x="0" y="0">Fria</tspan></text>
+    <line id="Line_1" data-name="Line 1" class="cls-4" x2="87" transform="translate(441.5 205.5)"/>
+    <line id="Line_2" data-name="Line 2" class="cls-4" x2="77" transform="translate(441.5 342.5)"/>
+    <line id="Line_3" data-name="Line 3" class="cls-4" x2="58" transform="translate(460.5 428.5)"/>
+  </g>
+</svg>
