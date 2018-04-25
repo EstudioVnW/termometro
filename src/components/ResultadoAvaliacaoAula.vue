@@ -167,7 +167,9 @@ export default {
     align-items: center;
   }
   .pai-avaliaçao-da-aula-conteiner-titulo{
-    font-weight: normal;
+    font-family: ministry, sans-serif;
+    font-style: normal;
+    font-weight: 400;
     margin: 0;
     justify-content: flex-end;
     flex-direction: column;
@@ -198,7 +200,9 @@ export default {
     text-align: left;
     justify-content: flex-end;
     margin: 0;
-    font-weight: normal;
+    font-family: ministry, sans-serif;
+    font-style: normal;
+    font-weight: 400;
     font-size: 1.2em;
   }
   .pai-avaliaçao-da-aula-botao{
@@ -211,6 +215,10 @@ export default {
     border-style: solid;
     border-width: 2px;
     border-color: #2E3192;
+    color: #2E3192;
+    font-family: ministry, sans-serif;
+    font-style: normal;
+    font-weight: 700;
     align-self: flex-start;
     margin:  10px 0px 0px 40px;
   }
@@ -224,8 +232,9 @@ export default {
 
   }
   .pai-avaliaçao-da-aula-comentarios-h1{
-    font-weight: normal;
-    font-weight: bold;
+    font-family: ministry, sans-serif;
+    font-style: normal;
+    font-weight: 700;
     font-size: 1.5em;
   }
   .pai-avaliaçao-da-aula-comentarios-lista{
@@ -240,6 +249,9 @@ export default {
     border-width: 2px;
     border-color: #2E3192;
     border-radius: 8px;
+    font-family: ministry, sans-serif;
+    font-style: normal;
+    font-weight: 400;
   }
 </style>
 

@@ -2,7 +2,7 @@
   <section>
     <PerfilProfessor></PerfilProfessor>
     
-    <div class="column">
+    
       <div class="column-aula">
         <p class="descricao">Aqui você expõe qual será o conteúdo da aula e marca a presença dos estudantes.</p>
         <img src="../assets/aulas.svg">
@@ -30,7 +30,7 @@
         </router-link>
         </div>
       </div>
-    </div>
+  
     
 
    </section>
@@ -57,15 +57,15 @@ export default {
 <style scoped>
 
   section{
-    height: 95.3vh;
+    height: 100vh;
     background-color: #F26522;
     display: flex;
-    flex-direction: row;
-    padding: 30px 10px  0 0;
+    justify-content: space-around;
+    align-items: center;
     background-image: url(../assets/fundo.jpg);
     background-repeat:no-repeat;
-    background-size: 215vh 55vw;
-    justify-content: center;
+    background-size: 100%;
+    padding: 0 5%;
 
     
   }
@@ -96,7 +96,9 @@ export default {
 h4{
   color: #FFFFFF;
   font-size: 0.9em;
-  font-family: 'Ministry,Heavy';
+  font-family: ministry, sans-serif;
+  font-style: normal;
+  font-weight: 400;
   text-align: center;
   margin: 0 auto;
 
@@ -110,20 +112,14 @@ h4{
   display: flex;
   justify-content: center;
   text-align: left;
+  font-family: ministry, sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
-  .column{
-          margin: 0 0 0 50px;
-          display: flex;
-          justify-content: flex-end;
-          justify-content: space-between;
-          height: 32vw;
-          width: 60vw;
-          
-    
-  }
+  
 
   .column-aula{
-                margin: 0 50px 0 0;
+                
                 display: flex;
                 flex-flow: column-reverse;
                 justify-content: space-around;
@@ -131,13 +127,13 @@ h4{
                 border:2px solid #2E3192; 
                 padding: 5px;
                 width: 16vw;
-                height: 86vh;
+                height: 88vh;
                 border-radius: 11.5px;
 
   }
 
    .column-duvida{
-    margin: 0 50px 0 0;
+    
     display: flex;
     flex-flow: column-reverse;
     justify-content: space-around;
@@ -145,12 +141,12 @@ h4{
     border:2px solid #2E3192; 
     padding: 5px;
     width: 16vw;
-    height: 86vh;
+    height: 88vh;
     border-radius: 11.5px;
   }
 
    .column-analisa{
-    margin: 0 50px 0 0;
+    
     display: flex;
     flex-flow: column-reverse;
     justify-content: space-around;
@@ -158,7 +154,7 @@ h4{
     border:2px solid #2E3192; 
     padding: 5px;
     width: 16vw;
-    height: 86vh;
+    height: 88vh;
     border-radius: 11.5px;
   }
 </style>

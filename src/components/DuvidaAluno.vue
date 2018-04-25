@@ -108,6 +108,9 @@ export default {
   .conteudo-duvidas__container{
     height: 90vh;
     width: 60vw;
+    font-family: ministry, sans-serif;
+    font-style: normal;
+    font-weight: 400;
     text-align: left;
     color: #2E3192;
     display: flex;
@@ -183,6 +186,9 @@ export default {
     width: 70%;
     font-size: 14px;
     margin-left: 2%;
+    font-family: ministry, sans-serif;
+    font-style: normal;
+    font-weight: 400;
   }
   .conteudo-duvidas__container-bloco2{
     width: 100%;
@@ -229,7 +235,9 @@ export default {
   margin: 30px 50px 0 0;
 }
 .container-button-voltar{
-  font-family: Ministry, Heavy, sans-serif;
+  font-family: ministry, sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 1em;
   width: 113.67px;
   color: #2E3192;

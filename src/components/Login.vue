@@ -16,8 +16,8 @@
           </div>
         </div>
         <div class="acesso">
-          <p class="acesso-PrimeiroPassos">Primeiro Acesso</p>
-          <p>Esqueceu a senha?</p>
+          <p class="acesso-PrimeiroPassos"><a href="#">Primeiro Acesso</a></p>
+          <p><a href="#">Esqueceu a senha?</a></p>
         </div>
         <div class="logo-VaiNaWeb">
           <img src="../assets/logo-vainaweb.svg">
@@ -163,12 +163,13 @@ section{
 }
 
 .acesso{
-  color: #f26522;
   font-size: 0.875rem;
   display: flex;
   flex-direction: row;
-  margin: 5px;    
+  margin: 5px;
+
 }
+a  {text-decoration:none;color:#f26522;}
 
 .acesso-PrimeiroPassos{
   margin: auto 30px auto 1px;
