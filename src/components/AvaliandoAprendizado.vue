@@ -12,11 +12,13 @@
         <p>Responda com sinceridade e faça comentários objetivos e construtivos, que possam ajudar a equipe Vai na Web a melhor o seu aprendizado. Adoramos receber sugestões, então se tiver alguma, deixa aí junto com a sua avaliação.</p>
       </div>
       <div class="containner-avaliacao">
-        <img class="containner-avaliacao-imagem" src="../assets/chata.png">
-        <img class="containner-avaliacao-imagem" src="../assets/desanimada1.png">
-        <img class="containner-avaliacao-imagem" src="../assets/ok.png">
-        <img class="containner-avaliacao-imagem" src="../assets/animada.png">
-        <img class="containner-avaliacao-imagem" src="../assets/incrivel.png">
+        <form>
+          <img class="containner-avaliacao-imagem" src="../assets/chata.png">
+          <img class="containner-avaliacao-imagem" src="../assets/desanimada1.png">
+          <img class="containner-avaliacao-imagem" src="../assets/ok.png">
+          <img class="containner-avaliacao-imagem" src="../assets/animada.png">
+          <img class="containner-avaliacao-imagem" src="../assets/incrivel.png">
+        </form>
       </div>
     </div>
     <div class="container-comentario">
@@ -24,8 +26,10 @@
         <p>Deixe aqui o seu comentário</p>
       </div>
       <div class="container-comentario-escrever">
-        <textarea placeholder="Deixe aqui o seu comentário"></textarea>
-        <!-- <input v-model="escrevercomentario" placeholder="Deixe aqui o seu comentário"> -->
+        <form>
+          <textarea placeholder="Deixe aqui o seu comentário"></textarea>
+          <!-- <input v-model="escrevercomentario" placeholder="Deixe aqui o seu comentário"> -->
+        </form>
       </div>
       <div class="container-comentario-button">
         <div>
@@ -98,6 +102,7 @@ section{
 .containner-avaliacao-imagem{
   width: 89.85px;
   height: 79.85px;
+  cursor: pointer;
 }
 
 .container-comentario {
