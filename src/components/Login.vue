@@ -9,7 +9,7 @@
         <form action="" method="POST" >
           <div class="dados">
               <input class="dados-email" type="text" name="email"  placeholder="Email"></input>
-              <input class="dados-senha" type="password" name="senha123" placeholder="Senha"></input>
+              <input class="dados-senha" type="password" name="senha" placeholder="Senha"></input>
               <router-link to="professor-inicial">
                 <button class="dados-button">Entrar</button>
               </router-link>
