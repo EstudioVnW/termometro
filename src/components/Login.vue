@@ -64,7 +64,7 @@ export default {
 <style scoped>
 
 section{
-  background-image: url(../assets/DSC_1866.jpg);
+  background-image: url(../assets/fundo.jpg);
   background-size: 240vh;;
   background-repeat: no-repeat;
   height: 100vh;/*
