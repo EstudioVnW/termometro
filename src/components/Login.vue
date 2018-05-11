@@ -7,7 +7,7 @@
           <img src="../assets/termometro.svg">
         </div>
         <div class="dados">
-          <input class="dados-email" type="text" name="email"  placeholder="Email"></input>
+          <input class="dados-email" type="text" name="email"  placeholder="Email0000"></input>
           <input class="dados-senha" type="password" name="senha" placeholder="Senha"></input>
           <div>
           <router-link to="professor-inicial">

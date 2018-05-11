@@ -85,12 +85,12 @@ export default {
   }
 
 .button{
-  background-color: #2E3192;
+  background-color: #FCAF17;
   border-radius: 10px;
   width: 9vw;
   height: 6vh;
   margin: 0 auto;
-  
+  border-color: #2E3192 5px;
 }
 
 h4{
