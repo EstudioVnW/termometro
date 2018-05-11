@@ -106,7 +106,7 @@ export default {
   height: 93vh;
   display: flex;
   justify-content: space-around;
-  background-image: url(../assets/DSC_1866.jpg); 
+  background-image: url(../assets/fundo.jpg); 
   background-size: 100vw 113vh;
   background-repeat: no-repeat;
 }

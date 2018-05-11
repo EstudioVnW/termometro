@@ -89,7 +89,7 @@ export default {
 .body{
     height: 93vh; 
     padding: 23px 6px;
-    background: url(../assets/foto-fundo.jpg) no-repeat #FF8C00; 
+    background: url(../assets/fundo.jpg) no-repeat #FF8C00; 
     background-size: cover;
     display: flex;
     flex-direction: row;

@@ -30,12 +30,7 @@
         </router-link>
         </div>
       </div>
-  
-    
-
    </section>
-   
-    
 </template>
 
 <script>
@@ -58,16 +53,13 @@ export default {
 
   section{
     height: 100vh;
-    background-color: #F26522;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-image: url(../assets/fundo.jpg);
     background-repeat:no-repeat;
     background-size: 100%;
-    padding: 0 5%;
-
-    
+    padding: 0 5%;    
   }
 
   img{ 

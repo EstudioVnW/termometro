@@ -62,7 +62,7 @@ export default {
     padding: 23px 3px 23px 6px;
     height: 93vh;
     justify-content: space-around;
-    background-image: url(../assets/foto-fundo.jpg); 
+    background-image: url(../assets/fundo.jpg); 
     background-size: 100vw 113vh;
     background-repeat: no-repeat;
   }

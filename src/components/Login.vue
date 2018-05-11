@@ -5,20 +5,20 @@
       <div class="container">
         <div class="logo-Termometro">
           <img src="../assets/termometro.svg">
-        </div>
-        <div class="dados">
-          <input class="dados-email" type="text" name="email"  placeholder="Email0000"></input>
-          <input class="dados-senha" type="password" name="senha" placeholder="Senha"></input>
-          <div>
-          <router-link to="professor-inicial">
-          <button class="dados-button">Entrar</button>
-          </router-link>
+        </div>        
+        <form action="" method="POST" >
+          <div class="dados">
+              <input class="dados-email" type="text" name="email"  placeholder="Email"></input>
+              <input class="dados-senha" type="password" name="senha" placeholder="Senha"></input>
+              <router-link to="professor-inicial">
+                <button class="dados-button">Entrar</button>
+              </router-link>
           </div>
-        </div>
-        <div class="acesso">
-          <p class="acesso-PrimeiroPassos"><a href="#">Primeiro Acesso</a></p>
-          <p><a href="#">Esqueceu a senha?</a></p>
-        </div>
+          <div class="acesso">
+            <p class="acesso-PrimeiroPassos"><a href="#">Primeiro Acesso</a></p>
+            <p><a href="#">Esqueceu a senha?</a></p>
+          </div>
+        </form>
         <div class="logo-VaiNaWeb">
           <img src="../assets/logo-vainaweb.svg">
         </div>
@@ -64,7 +64,7 @@ export default {
 <style scoped>
 
 section{
-  background-image: url(../assets/DSC_1866.jpg);
+  background-image: url(../assets/fundo.jpg);
   background-size: 240vh;;
   background-repeat: no-repeat;
   height: 100vh;/*
@@ -104,6 +104,11 @@ section{
 }
 
 .dados{
+  display: flex;
+  flex-direction: column;
+}
+
+.dados form{
   display: flex;
   flex-direction: column;
 }
