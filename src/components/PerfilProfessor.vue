@@ -105,6 +105,9 @@
 .conteudo-descricao__detalhes{
   width: 90%;
   min-height: 30vh;
+  font-family: ministry, sans-serif;
+  font-style: normal;
+  font-weight: 400;
   margin-bottom: 4%;
   color: #2E3192;
   text-align: left;
@@ -115,15 +118,21 @@
 .conteudo-descricao__detalhes--turma{
   margin: 0 2%;
   font-size: 16px;
-  font-weight: bold;
+  font-family: ministry, sans-serif;
+  font-style: normal;
+  font-weight: 700;
   color: #FF611E;
 }
 .conteudo-descricao__detalhes--turno{
   margin:  0 2%;
-  font-weight: bold;
+  font-family: ministry, sans-serif;
+  font-style: normal;
+  font-weight: 700;
 }
 .conteudo-descricao__detalhes--materia{
-  font-weight: bold;
+  font-family: ministry, sans-serif;
+  font-style: normal;
+  font-weight: 700;
   margin: 5% 2%;
 }
 .conteudo-descricao__detalhes--sobre{

@@ -106,7 +106,7 @@ export default {
   height: 93vh;
   display: flex;
   justify-content: space-around;
-  background-image: url(../assets/DSC_1866.jpg); 
+  background-image: url(../assets/fundo.jpg); 
   background-size: 100vw 113vh;
   background-repeat: no-repeat;
 }
@@ -227,6 +227,9 @@ export default {
 .custom-radio li{
   list-style: none;
   position: relative;
+  font-family: ministry, sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .custom-radio li span{
@@ -238,6 +241,7 @@ export default {
   display: inline-block;
   border: 2px solid #2E3192;
   border-radius: 50%;
+
 }
 
 .custom-radio li span::after{
@@ -281,8 +285,9 @@ input[type=radio]:checked::after{
 .container-aula-descricao{
 }
 .container-aula-polo{
-  font-family: Ministry, Heavy, sans-serif;
-  font-weight: bolder;
+  font-family: ministry, sans-serif;
+  font-style: normal;
+  font-weight: 700;
   font-size: 1.6em;
   margin: 25px 0 11px 0;
 }
@@ -309,8 +314,9 @@ input[type=radio]:checked::after{
 }
 
 .container-aula-modulo{ 
-  font-family: Ministry, Heavy, sans-serif;
-  font-weight: bolder;
+  font-family: ministry, sans-serif;
+  font-style: normal;
+  font-weight: 700;
   font-size: 1.6em;
   margin: 31px 0 11px 0;
 }
@@ -331,8 +337,9 @@ input[type=radio]:checked::after{
 }
 
 .container-aula-turno{
-  font-family: Ministry, Heavy, sans-serif;
-  font-weight: bolder;
+  font-family: ministry, sans-serif;
+  font-style: normal;
+  font-weight: 700;
   font-size: 1.6em;
   margin: 31px 0 11px 0;
 }
@@ -350,8 +357,9 @@ input[type=radio]:checked::after{
 }
 
 .container-aula-tema{
-  font-family: Ministry, Heavy, sans-serif;
-  font-weight: bolder;
+  font-family: ministry, sans-serif;
+  font-style: normal;
+  font-weight: 700;
   font-size: 2em;
 }
 .container-aula-tema-input{
@@ -364,8 +372,9 @@ input[type=radio]:checked::after{
 }
 
 .container-aula-conteudo{
-  font-family: Ministry, Heavy, sans-serif;
-  font-weight: bolder;
+  font-family: ministry, sans-serif;
+  font-style: normal;
+  font-weight: 700;
   font-size: 1.6em;
 
 }
@@ -387,7 +396,9 @@ input[type=radio]:checked::after{
 }
 
 .container-button-voltar{
-  font-family: Ministry, Heavy, sans-serif;
+  font-family: ministry, sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 1em;
   width: 113.67px;
   color: #2E3192;
@@ -398,7 +409,9 @@ input[type=radio]:checked::after{
 }
 
 .container-button-chamada{
-  font-family: Ministry, Heavy, sans-serif;
+  font-family: ministry, sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 1em;
   width:  181.67px;
   color: #fff;

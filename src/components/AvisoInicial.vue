@@ -12,7 +12,6 @@
 <script>
 	
 </script>
-<style scoped>
 .body{
 	height: 100vh;
 	background: url(../assets/DSC_1866.jpg) no-repeat;
