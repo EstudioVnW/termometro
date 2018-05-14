@@ -210,7 +210,7 @@
             <input  class="conteudo__botoes--volta" type="button" name="botao-ok" value="Voltar">
             <input  class="conteudo__botoes--volta" type="button" name="botao-ok" value="Voltar" v-if="!professor && precisaMudar">
           </router-link>
-        </div> 
+        </div>
         <div>
           <router-link to="professor-inicial">
             <input  class="conteudo__botoes--iniciar" type="button" name="botao-ok" value="Iniciar Aula">

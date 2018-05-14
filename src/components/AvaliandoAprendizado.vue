@@ -1,41 +1,49 @@
 <template>
-  <section class="container">
-    <div class="containner-descricao">
-      <div class="containner-descricao-imagem">
-        <img class="containner-descricao-imagem-termometro" src="../assets/termometro.svg">
-        <img class="containner-descricao-imagem-VaiNaWeb" src="../assets/logo-vainaweb.svg">
+  <div class="body">
+    <div class="body__descricao">
+      <div class="body__descricao-imgs">
+        <img class="body__descricao--termometro" src="../assets/termometro.svg">
+        <img class="body__descricao--vnw" src="../assets/logo-vainaweb.svg">
       </div>
-      <div class="containner-descricao-titulo">
-        <p class="containner-descricao-titulo-frase">Agora é a hora de avaliar a aula que você assistiu.</p>
-      </div>
-      <div class="containner-descricao-texto">
-        <p>Responda com sinceridade e faça comentários objetivos e construtivos, que possam ajudar a equipe Vai na Web a melhor o seu aprendizado. Adoramos receber sugestões, então se tiver alguma, deixa aí junto com a sua avaliação.</p>
-      </div>
-      <div class="containner-avaliacao">
-        <img class="containner-avaliacao-imagem" src="../assets/chata.png">
-        <img class="containner-avaliacao-imagem" src="../assets/desanimada1.png">
-        <img class="containner-avaliacao-imagem" src="../assets/ok.png">
-        <img class="containner-avaliacao-imagem" src="../assets/animada.png">
-        <img class="containner-avaliacao-imagem" src="../assets/incrivel.png">
-      </div>
-    </div>
-    <div class="container-comentario">
-      <div class="container-comentario-titulo">
-        <p>Deixe aqui o seu comentário</p>
-      </div>
-      <div class="container-comentario-escrever">
-        <textarea placeholder="Deixe aqui o seu comentário"></textarea>
-        <!-- <input v-model="escrevercomentario" placeholder="Deixe aqui o seu comentário"> -->
-      </div>
-      <div class="container-comentario-button">
-        <div>
-        <router-link to="aviso-termino">
-        <button class="container-comentario-button-avaliar">Avaliar aula</button>
-        </router-link>
+      <h1 class="body__descricao--titulo">
+        Agora é a hora de avaliar a aula que você assistiu.
+      </h1>
+      <p class="body__descricao--paragrafo">
+        Responda com sinceridade e faça comentários objetivos e construtivos, que possam ajudar a equipe Vai na Web a melhor o seu aprendizado. Adoramos receber sugestões, então se tiver alguma, deixa aí junto com a sua avaliação.
+      </p>
+      <div class="body__descricao-avaliacao">
+        <div class="body__descricao-avaliacao--caixa">
+          <img class="body__descricao-avaliacao--img" src="../assets/chata.png">
+          <span class="body__descricao-avaliacao--leg">chata</span>
+        </div>
+        <div class="body__descricao-avaliacao--caixa">
+          <img class="body__descricao-avaliacao--img" src="../assets/desanimada1.png">
+          <span class="body__descricao-avaliacao--leg">desanimada</span>
+        </div>
+        <div class="body__descricao-avaliacao--caixa">
+          <img class="body__descricao-avaliacao--img" src="../assets/ok.png">
+          <span class="body__descricao-avaliacao--leg">ok</span>
+        </div>
+        <div class="body__descricao-avaliacao--caixa">
+          <img class="body__descricao-avaliacao--img" src="../assets/animada.png">
+          <span class="body__descricao-avaliacao--leg">animada</span>
+        </div>
+        <div class="body__descricao-avaliacao--caixa">
+          <img class="body__descricao-avaliacao--img" src="../assets/incrivel.png">
+          <span class="body__descricao-avaliacao--leg">incrível</span>
         </div>
       </div>
     </div>
-  </section>
+    <div class="body__descricao body__descricao--direita">
+      <h1 class="body__descricao--titulo">Deixe aqui o seu comentário</h1>
+      <textarea class="body__descricao--comentario" placeholder="Deixe aqui o seu comentário"></textarea>
+      <div class="body__descricao--button">
+        <router-link to="aviso-termino">
+        <button class="body__descricao--button-avaliar">Avaliar aula</button>
+        </router-link>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -50,122 +58,127 @@ export default {
 </script>
 
 <style type="text/css">
-
-
-section{ 
-  background-color: #FCAF17;
+.body{ 
   height: 100vh;
+  background-color: #FCAF17;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
 }
-
-.containner-descricao{
+.body__descricao{
   width: 50%;
-  text-align: left;
-  padding: 5.5% 0 5.5% 5.5%;
+  padding: 4%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
 }
-
-.containner-descricao-imagem-termometro{
+.body__descricao--direita{
+  height: 79.2vh;
+  padding: 0;
+  justify-content: flex-end;
+}
+.body__descricao-imgs{
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: flex-start;
+}
+.body__descricao--termometro{
   width: 5.6%;
 }
-
-.containner-descricao-imagem-VaiNaWeb{
+.body__descricao--vnw{
   width: 16%;
   margin: 19px 8px;
 }
-
-.containner-descricao-titulo {  
-  font-family: Ministry, Heavy, sans-serif;
+.body__descricao--titulo{
+  font-family:"ministry";
+  font-style:normal;
+  font-weight:700;
   color: #2E3192;
   font-size: 2em;
-  width: 63%;  
-  font-weight: bolder;
+  text-align: left;
 }
-
-.containner-descricao-texto {
+.body__descricao--paragrafo{
+  margin: 0 0 3% 0;
+  font-family:"ministry";
+  font-style:normal;
+  font-weight:400;
   color: #fff;
   font-size: 1.375em;
-  font-family: Ministry, Medium, sans-serif;
-  width: 71%; 
+  text-align: left;
 }
-
-.containner-avaliacao{
+.body__descricao-avaliacao{
   display: flex;
   flex-direction: row;
 }
-
-
-.containner-avaliacao-imagem{
-  width: 89.85px;
-  height: 79.85px;
-}
-
-.container-comentario {
-  margin-top: 8%;
+.body__descricao-avaliacao--caixa{
+  margin: 0 1%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  font-weight: bolder;
+  cursor: pointer;
 }
-
-.container-comentario-titulo{
-  color: #2E3192;
-  font-size: 2em;
-  font-family: Ministry, Heavy, sans-serif;
-  text-align: left;  
-  font-weight: bolder;
+.body__descricao-avaliacao--img{
+  width: 89px;
+  height: 79px;
+  margin: 0 1%;
+  transition: opacity 2s, transform .4s;
 }
-
-.container-comentario-escrever textarea{ 
+.body__descricao-avaliacao--img:hover{
+  transform: scale(1.2);
+}
+.body__descricao-avaliacao--leg{
+  font-size: .8em;
+  color: #000;
+  font-family:"ministry";
+  font-style:normal;
+  font-weight:400;
+  opacity: 0;
+}
+.body__descricao-avaliacao--img:hover + .body__descricao-avaliacao--leg{
+  opacity: 1;
+}
+.body__descricao--comentario{ 
+  width: 85%;
   height: 30vh;   
-  width: 37vw;
+  padding: 10px;
   border: 2px solid #2E3192;  
   border-radius: 10px;
   resize: none;
   color: #2E3192;
-  padding: 10px;
 }
-
-
 ::-webkit-input-placeholder {
   color: #2E3192;
   font: 16px Ministry, Medium, sans-serif;
 }
-
-
 :-moz-placeholder {
   color: #2E3192;
   font: 16px Ministry, Medium, sans-serif;
 }
-
 ::-moz-placeholder {
   color: #2E3192;
   font: 16px Ministry, Medium, sans-serif;
 }
-
 :-ms-input-placeholder {  
   color: #2E3192;
   font: 16px Ministry, Medium, sans-serif;
 }
-
-.container-comentario-button{
-  height: 41.53px;
-  margin-top: 33px;
+.body__descricao--button{
+  width: 89%;
+  margin-top: 30px;
   display: flex;
   justify-content: flex-end;
 }
-
-.container-comentario-button-avaliar{
-  border: none;
-  background-color: #2E3192;
-  color: #fff;
-  border-radius:10px;
-  font-family: Ministry, Heavy, sans-serif;
-  font-size: 1em;    
+.body__descricao--button-avaliar{
   width:  181.67px;
   padding: 10px;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border: none;
+  border-radius: 10px;
+  background-color: #2E3192;
+  color: #fff;
+  font-family:"ministry";
+  font-style:normal;
+  font-weight:400;
+  font-size: 1em;    
+  /*box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);*/
 }
-
-
 </style>

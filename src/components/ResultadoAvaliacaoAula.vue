@@ -1,33 +1,36 @@
 <template>
-  <div class="pai">
+  <div class="body">
     <PerfilProfessor></PerfilProfessor>
-    <div class="pai-avaliaçao-da-aula">
-      <div class="pai-avaliaçao-da-aula-conteiner">
-        <h1 class="pai-avaliaçao-da-aula-conteiner-titulo">Avaliação da Aula:</h1>
-        <div class="pai-avaliaçao-da-aula-conteiner-dupla">
-          <img class="pai-avaliaçao-da-aula-termometro_img" src="../assets/termometro.svg">
-          <img class="pai-avaliacao-medidor" src="../assets/medidor.svg" >  
-          
+    <div class="body__conteudo">
+      <div class="body__conteudo-caixa">
+        <h1 class="body__conteudoCaixa-titulo">Avaliação da Aula:</h1>
+        <div class="body__conteudoCaixa-imgs">
+          <img class="body__conteudoCaixa-imgs--termometro" src="../assets/termometro.svg">
+          <img class="body__conteudoCaixa-imgs--medidor" src="../assets/medidor.svg">
         </div>  
-        <h3 class="pai-avaliaçao-da-aula-sobre_aula">A aula de hoje recebeu uma avaliação menor que 5. <br>Veja os comentarios dos estudantes.</h3>
-        <div>
-        <router-link to="professor-inicial">
-        <input class="pai-avaliaçao-da-aula-botao" type="button" name="botao-ok" value="Voltar">
-        </router-link>
+        <h2 class="body__conteudoCaixa-subtitulo">
+          A aula de hoje recebeu uma avaliação menor que 5.
+        </h2>
+        <h2 class="body__conteudoCaixa-subtitulo">
+          Veja os comentarios dos estudantes.
+        </h2>
+        <div class="body__conteudoCaixa-box">
+          <router-link to="professor-inicial">
+          <input class="body__conteudoCaixa--botao" type="button" name="botao-ok" value="Voltar">
+          </router-link>
         </div>
       </div>  
-      <div class="pai-avaliaçao-da-aula-comentarios">
-        <h1 class="pai-avaliaçao-da-aula-comentarios-h1">Comentários</h1>
-        <div class="pai-avaliaçao-da-aula-comentarios-lista">
-              <ul class="pai-avaliaçao-da-aula-comentarios-lista-ul" v-for="recado in usuario.recados">
-              <li>{{recado}}</li>
+      <div class="body__conteudoCaixa">
+        <h1 class="body__conteudoCaixa-titulo">Comentários</h1>
+        <div class="body__conteudoCaixa-caixa">
+              <ul class="body__conteudoCaixa-lista" v-for="recado in usuario.recados">
+                <li class="body__conteudoCaixa-lista--item">{{recado}}</li>
               </ul>
           </div>
       </div>
     </div>
   </div>
 </template>
-
 <script>
 import PerfilProfessor from './PerfilProfessor.vue'  
 export default {
@@ -51,157 +54,78 @@ export default {
     PerfilProfessor
   }
 }
-  
 </script>
 
 <style scoped>
-  .pai{
-    display: flex;
-    flex-direction: row;
+  .body{
+    height: 93vh;
     background-color: #FF8C00;
     padding: 23px 3px 23px 6px;
-    height: 93vh;
-    justify-content: space-around;
-    background-image: url(../assets/foto-fundo.jpg); 
-    background-size: 100vw 113vh;
-    background-repeat: no-repeat;
-  }
-  .pai-sobre-o-professor{
+    background: url(../assets/foto-fundo.jpg) no-repeat; 
+    background-size: 100%;
     display: flex;
-    width: 15vw;
-    border-style: solid;
-    border-color: #2E3192;
-    border-width: 2px;
-    background-color: #FFFFFF;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 10px;
+    flex-direction: row;
     justify-content: space-around;
   }
-  .pai-sobre-inicio-termometro-img{
-    height: 80px;
-    width: 60px;  
-  }
-  .pai-sobre-inicio-logo-img{
-    height: 7vh;
-    width: 5vw;
-  }
-  
-  .pai-sobre-inicio{
-    margin: 0 auto;
-    display: flex;
-    width: 15vw;
-    align-items: center;
-    justify-content: center;
-  }
-  .pai-sobre-foto-professor-perfil{
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    vertical-align: middle;
-    margin: 0 35px 20px;
-    background-color: #F26522;
-    border-color: #2E3192;
-    border-width: 0,1em;
-    border-style: solid;
-  }
-  .pai-sobre-expecificacoes-prof{
-    margin: 0;
-    color: #2E3192;
-  }
- 
-  .pai-sobre-expecificacoes-prof-nome{
-    
-    margin: 0;
-    font-weight: bold;
-    font-size: 0.9em;
-  }
-  .pai-sobre-expecificacoes-prof-proficao{
-    margin: 0;
-    font-weight: normal;
-    font-size: 0.9em;
-  }
-  .pai-sobre-expecificacoes-prof-local{
-    margin: 0;
-    font-weight: normal;    
-  }
-  .pai-sobre-botao{
-    border-radius: 8px;
-    height: 5vh;
-    width: 7vw;
-    background-color: #FFFFFF;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #2E3192;      
-  }
-  .pai-avaliaçao-da-aula{
-    display: flex;
-    margin: 0 ;
-    background-color: #FFFFFF;
+  .body__conteudo{
     width: 80vw;
     height: 90vh;
-    border-color:#2E3192;
-    border-width: 2px;
+    margin: 0;
+    background-color: #fff;
+    border: solid 2px #2E3192;
     border-radius: 10px;
-    border-style: solid;
     box-sizing: border-box;
+    display: flex;
   }
-  .pai-avaliaçao-da-aula-conteiner{
+  .body__conteudo-caixa{
+    width: 50%;
+    height: 90%;
+    margin: 0;
+    padding: 0 160px 0 0;
+    color: #2E3192;
     display: flex;
     flex-direction: column;
-    height: 43.9vw;
-    width: 30vw;
-    margin: 0;
-    color: #2E3192;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
-    padding: 0 160px 0 0;
   }
-  .pai-avaliaçao-da-aula-conteiner-dupla{
+  .body__conteudoCaixa-titulo{
+    margin: 0;
+    font-weight: normal;
+    font-size: 1.5em;
+    font-weight:bold;
+  }
+  .body__conteudoCaixa-imgs{
     display: flex;
     justify-content: space-between;
     height: 30vh;
     width: 15vw;
     align-items: center;
   }
-  .pai-avaliaçao-da-aula-conteiner-titulo{
-    font-weight: normal;
-    margin: 0;
-    justify-content: flex-end;
-    flex-direction: column;
-    font-size: 1.5em;
-    font-weight:bold;
-  }
-  .pai-avaliaçao-da-aula-termometro_img{
+  .body__conteudoCaixa-imgs--termometro{
     height: 271px;
     width: 107px;
     margin: 0;
   }
-  .pai-avaliacao-medidor{
+  .body__conteudoCaixa-imgs--medidor{
     height: 240px;
     width: 160px;
     margin: 0 0 20px 0;
-  } 
-
-  .pai-avaliaçao-da-aula-sobre_aula{
-    margin: 0;
-    justify-content: flex-end;
-    height: 50vh;
-    align-self: center;
-    padding: 20px 0px 0px 0px;
   }
-  .pai-avaliaçao-da-aula-sobre_aula{
+  .body__conteudoCaixa-subtitulo{
     width: 18vw;
     height: 16vh;
+    padding: 20px 0px 0px 0px;
     text-align: left;
     justify-content: flex-end;
     margin: 0;
     font-weight: normal;
     font-size: 1.2em;
   }
-  .pai-avaliaçao-da-aula-botao{
+  .body__conteudoCaixa-box{
+    width: 50%;
+    height: 5%;
+  }
+  .body__conteudoCaixa--botao{
     align-self: flex-end;
     border-radius: 8px;
     height: 5vh;
@@ -214,26 +138,25 @@ export default {
     align-self: flex-start;
     margin:  10px 0px 0px 40px;
   }
-  .pai-avaliaçao-da-aula-comentarios{
+  .body__conteudoCaixa{
     color: #2E3192;
     height: 60vh;
-    width: 38vw;
+    width: 50%;
     margin: 0;
     text-align: left;
-    align-self: center; 
-
+    align-self: center;
   }
-  .pai-avaliaçao-da-aula-comentarios-h1{
+  .body__conteudoCaixa-titulo{
     font-weight: normal;
     font-weight: bold;
     font-size: 1.5em;
   }
-  .pai-avaliaçao-da-aula-comentarios-lista{
+  .body__conteudoCaixa-caixa{
     height: 50vh;
     margin: 0;
     overflow: auto;
   }
-  .pai-avaliaçao-da-aula-comentarios-lista-ul{
+  .body__conteudoCaixa-lista{
     overflow: auto;
     list-style: none;
     border-style: solid;
