@@ -65,7 +65,7 @@ export default {
 
 section{
   background-image: url(../assets/fundo.jpg);
-  background-size: 240vh;;
+  background-size: 240vh;
   background-repeat: no-repeat;
   height: 100vh;/*
   display: flex;
