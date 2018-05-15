@@ -87,10 +87,12 @@ export default {
 
 <style scoped>
 .body{
+    background: url(../assets/fundo.jpg) no-repeat;
+    background-size: 100%;
     height: 93vh; 
     padding: 23px 6px;
-    background: url(../assets/fundo.jpg) no-repeat #FF8C00; 
-    background-size: cover;
+    /*background: url(../assets/fundo.jpg) no-repeat #FF8C00; */
+    /*background-size: cover;*/
     display: flex;
     flex-direction: row;
     justify-content: space-around;

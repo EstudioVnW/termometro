@@ -102,13 +102,13 @@ export default {
 <style type="text/css">
 
 .container{ 
+  background: url(../assets/fundo.jpg) no-repeat;
+  background-size: 100%;
   padding: 23px 3px 23px 6px;
   height: 93vh;
   display: flex;
   justify-content: space-around;
-  background-image: url(../assets/fundo.jpg); 
-  background-size: 100vw 113vh;
-  background-repeat: no-repeat;
+  /*background-size: 100vw 113vh;*/
 }
 
 .container-perfil{
