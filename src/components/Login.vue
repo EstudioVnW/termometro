@@ -84,7 +84,7 @@ section{
 
 .container{
   width: 502px;
-  min-height: 403px;
+  height: 403px;
   background-color: #fff;
   border: 2px solid #2E3192;
   border-radius: 10px;

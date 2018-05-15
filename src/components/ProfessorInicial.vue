@@ -53,11 +53,12 @@ export default {
 
   section{
     height: 100vh;
+    background-image: url(../assets/fundo.jpg);
+    background-repeat:no-repeat;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-image: url(../assets/fundo.jpg);
-    background-repeat:no-repeat;
+    
     background-size: 100%;
     padding: 0 5%;    
   }

@@ -1,7 +1,7 @@
 <template>
   <div class="body">
     <PerfilProfessor></PerfilProfessor>
-    <div class="conteudo">
+    <div class="conteudos">
       <div class="conteudo__informacoes">
         <div class="classe__informacoes__dados">
           <h3 class="classe__informacoes__dados--titulo">diário de classe</h3>
@@ -246,17 +246,17 @@ export default {
   justify-content: space-around;
   align-items: center;
 }
-.conteudo{
-  width: 80%;
-  height: 89.7vh;
-  border-radius: 11.5px;
-  border:2px solid #2E3192; 
-  background-color: #fff; 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-}
+  .conteudos{
+    width: 80%;
+    height: 89.7vh;
+    border-radius: 11.5px;
+    border:2px solid #2E3192; 
+    background-color: #fff; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
 .conteudo__informacoes{
   width: 16%;
   height: 60vh;
