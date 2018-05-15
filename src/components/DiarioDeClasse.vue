@@ -237,16 +237,17 @@ export default {
 }
 </script>
 <style scoped>
+
 .body{
   height: 100vh;
   width: 100%;
-  background: #F26522 url(../assets/fundo.jpg) no-repeat;
+  background: url(../assets/fundo.jpg) no-repeat;
   background-size:100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-  .conteudos{
+.conteudos{
     width: 80%;
     height: 89.7vh;
     border-radius: 11.5px;

@@ -1,8 +1,8 @@
 <template>
   <section>
-    <div class="orange">
+    <div class="BlocoInicial">
       <!-- <img src="../assets/DSC_1866.jpg"> -->
-      <div class="container">
+      <div class="BlocoInicial_caixa">
         <div class="logo-Termometro">
           <img src="../assets/termometro.svg">
         </div>        
@@ -72,7 +72,7 @@ section{
   align-items: center;*/
 }
 
-.orange{
+.BlocoInicial{
   background-color: rgb(252, 175, 23, 0.70);
   width: 100%;
   height: 100%;
@@ -81,10 +81,10 @@ section{
   align-items: center;
 }
 
-.container{
+.BlocoInicial_caixa{
   width: 502px;
   height: 403px;
-  background-color: #fff;
+  background-color: #ffff;
   border: 2px solid #2E3192;
   border-radius: 10px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
