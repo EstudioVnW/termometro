@@ -15,7 +15,7 @@
 <style scoped>
 .body{
 	height: 100vh;
-	background: url(../assets/DSC_1866.jpg) no-repeat;
+	background: url(../assets/fundo.jpg) no-repeat;
 	background-size: 100%;
 }
 .body__filtro{

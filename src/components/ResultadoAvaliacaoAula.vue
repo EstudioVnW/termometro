@@ -61,7 +61,7 @@ export default {
     height: 93vh;
     background-color: #FF8C00;
     padding: 23px 3px 23px 6px;
-    background: url(../assets/foto-fundo.jpg) no-repeat; 
+    background: url(../assets/fundo.jpg) no-repeat; 
     background-size: 100%;
     display: flex;
     flex-direction: row;

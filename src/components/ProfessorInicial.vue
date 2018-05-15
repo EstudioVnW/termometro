@@ -77,7 +77,7 @@ export default {
   }
 
 .button{
-  background-color: #FCAF17;
+  background-color: #2E3192;
   border-radius: 10px;
   width: 9vw;
   height: 6vh;
