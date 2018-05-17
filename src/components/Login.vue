@@ -1,11 +1,8 @@
 <template>
-  <section>
-    <div class="BlocoInicial">
-      <!-- <img src="../assets/DSC_1866.jpg"> -->
-      <div class="BlocoInicial_caixa">
-        <div class="logo-Termometro">
-          <img src="../assets/termometro.svg">
-        </div>        
+  <section class="Bloco__inicial">
+    <div class="BlocoInicial-filtro">
+      <div class="BlocoInicial-box">
+        <img class="BlocoInicial-logo--termometro" src="../assets/termometro.svg">       
         <form action="" method="POST" >
           <div class="dados">
               <input class="dados-email" type="text" name="email"  placeholder="Email"></input>
@@ -19,9 +16,7 @@
             <p><a href="#">Esqueceu a senha?</a></p>
           </div>
         </form>
-        <div class="logo-VaiNaWeb">
-          <img src="../assets/logo-vainaweb.svg">
-        </div>
+        <img class="BlocoInicial-logo--vnw" src="../assets/logo-vainaweb.svg">
       </div>
     </div>
   </section>
@@ -63,25 +58,20 @@ export default {
 
 <style scoped>
 
-section{
+.Bloco__inicial{
+  height: 100vh;
   background: url(../assets/fundo.jpg) no-repeat;
   background-size: 100%;
-  height: 100vh;/*
-  display: flex;
-  justify-content: center;
-  align-items: center;*/
 }
-
-.BlocoInicial{
-  background-color: rgb(252, 175, 23, 0.70);
+.BlocoInicial-filtro{
   width: 100%;
   height: 100%;
+  background-color: rgb(252, 175, 23, 0.70);
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.BlocoInicial_caixa{
+.BlocoInicial-box{
   width: 502px;
   height: 403px;
   background-color: #ffff;
@@ -93,96 +83,77 @@ section{
   justify-content: center;
   flex-direction: column;
 }
-
-.logo-Termometro img{
-  /*width: 5vw;*/
-  /*width: 36px;*/
-  /*width: 10%;*/
-  width: 66%;
+.BlocoInicial-logo--termometro{
+  width: 20vw;
+  height: 15vh;
   margin: 0 0 21px 0;
 }
-
 .dados{
   display: flex;
   flex-direction: column;
 }
-
 .dados form{
   display: flex;
   flex-direction: column;
 }
-
 .dados-email{
-  font-size: 0.75em;
-  color: #2E3192;
-  margin: 0 0 9px 0;
   height: 5.10vh;
   border: 2px solid #2E3192;
   border-radius: 10px;
   padding-left: 10px;
+  font-size: 0.75em;
+  color: #2E3192;
+  margin: 0 0 9px 0;
 }
-
 .dados-senha{
-  font-size: 0.75em;
-  color: #2E3192;
-  margin: 0 0 9px 0;
   height: 5.10vh;
+  padding-left: 10px;
+  margin: 0 0 9px 0;
   border: 2px solid #2E3192;
   border-radius: 10px;
-  padding-left: 10px;
+  font-size: 0.75em;
+  color: #2E3192;
 }
-
 ::-webkit-input-placeholder {
   color: #2E3192;
   font: 12px Ministry, Medium, sans-serif;
 }
-
-
 :-moz-placeholder {
   color: #2E3192;
   font: 12px Ministry, Medium, sans-serif;
 }
-
 ::-moz-placeholder {
   color: #2E3192;
   font: 12px Ministry, Medium, sans-serif;
 }
-
 :-ms-input-placeholder {  
   color: #2E3192;
   font: 12px Ministry, Medium, sans-serif;
 }
-
 .dados-button{
-  /*width:  27vw;*/
   width:  275.67px;
   padding: 10px;
-  color: #fff;
-  font-family: Ministry, Heavy, sans-serif;
-  font-size: 0.75em;
   border: none;
   background-color: #2E3192;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.12);
   border-radius:10px;   
+  color: #fff;
+  font-family: Ministry, Heavy, sans-serif;
+  font-size: 0.75em;
 }
-
 .acesso{
+  margin: 5px;
   font-size: 0.875rem;
   display: flex;
   flex-direction: row;
-  margin: 5px;
-
 }
 a  {text-decoration:none;color:#f26522;}
-
 .acesso-PrimeiroPassos{
   margin: auto 30px auto 1px;
 }
-
-.logo-VaiNaWeb img{
-  /*width: 10vw;
-  width: 76.54px;*/
-  width: 37%;
+.BlocoInicial-logo--vnw{
+  width: 10vw;
+  height: 10vh;
 }
 
 </style>

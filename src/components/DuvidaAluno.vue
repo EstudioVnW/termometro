@@ -235,17 +235,19 @@ export default {
   display: flex;
   justify-content: space-between;
   margin: 30px 50px 0 0;
+
 }
 .container-button-voltar{
+  width: 7vw;
+  height: 6vh;
+  border: 2px solid #2E3192;
+  background-color: #fff;
+  border-radius:10px;
+  padding: 10px;
   font-family: ministry, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1em;
-  width: 113.67px;
   color: #2E3192;
-  border: 2px solid #2E3192;
-  background-color: #fff;
-  border-radius:10px;
-    padding: 10px;
 }
 </style>

@@ -10,8 +10,6 @@
         </div>  
         <h2 class="body__conteudoCaixa-subtitulo">
           A aula de hoje recebeu uma avaliação menor que 5.
-        </h2>
-        <h2 class="body__conteudoCaixa-subtitulo">
           Veja os comentarios dos estudantes.
         </h2>
         <div class="body__conteudoCaixa-box">
@@ -24,7 +22,7 @@
         <h1 class="body__conteudoCaixa-titulo">Comentários</h1>
         <div class="body__conteudoCaixa-caixa">
               <ul class="body__conteudoCaixa-lista" v-for="recado in usuario.recados">
-                <li class="body__conteudoCaixa-lista--item">{{recado}}</li>
+              <li class="body__conteudoCaixa-lista--item">{{recado}}</li>
               </ul>
           </div>
       </div>
@@ -39,7 +37,7 @@ export default {
       return {
         recado: '',
         usuario: {
-          recados: ['Não consegui entender o conteúdo. Seria melhor se tivesse um esquema para facilitar a visualização do conteúdo.','O método utilizado para explicar o conteúdo não foi muito fácil de entender.','Se o professor tivesse usado um desenho ou um video para explicar como funciona o CSS seria melhor.','Achei que o professor se extendeu demais durante a explica- ção e o conteúdo não ficou claro.','Eu teria compreendido melhor a aula se o professor tivesse usado um outr jeito de dar aula.','Socorro os codigos não gostão de mim, vou desistir sem socorro.','Eu quero minha mamãe, vou chorar, isso é muito difícil pra mim']
+          recados: ['']
             
         }
       }
@@ -58,18 +56,18 @@ export default {
 
 <style scoped>
   .body{
-    height: 93vh;
+    height: 100vh;
     background-color: #FF8C00;
-    padding: 23px 3px 23px 6px;
     background: url(../assets/fundo.jpg) no-repeat; 
     background-size: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
   }
   .body__conteudo{
-    width: 80vw;
-    height: 90vh;
+    width: 80%;
+    height: 89.7vh;
     margin: 0;
     background-color: #fff;
     border: solid 2px #2E3192;
@@ -78,21 +76,27 @@ export default {
     display: flex;
   }
   .body__conteudo-caixa{
-    width: 50%;
-    height: 90%;
+    height: 43.9vw;
+    width: 30vw;
     margin: 0;
     padding: 0 160px 0 0;
     color: #2E3192;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
+    justify-content: space-around;
   }
   .body__conteudoCaixa-titulo{
     margin: 0;
     font-weight: normal;
     font-size: 1.5em;
-    font-weight:bold;
+    font-family: ministry, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    font-size: 1.5em;
   }
   .body__conteudoCaixa-imgs{
     display: flex;
@@ -112,7 +116,7 @@ export default {
     margin: 0 0 20px 0;
   }
   .body__conteudoCaixa-subtitulo{
-    width: 18vw;
+    width: 17.8vw;
     height: 16vh;
     padding: 20px 0px 0px 0px;
     text-align: left;
@@ -124,8 +128,11 @@ export default {
     font-size: 1.2em;
   }
   .body__conteudoCaixa-box{
-    width: 50%;
-    height: 5%;
+    width: 60%;
+    height: 8%;
+    display: flex;
+    align-items: flex-start;
+    /*background-color: black;*/
   }
   .body__conteudoCaixa--botao{
     align-self: flex-end;
@@ -142,23 +149,25 @@ export default {
     font-style: normal;
     font-weight: 700;
     align-self: flex-start;
-    margin:  10px 0px 0px 40px;
+    /*margin:  10px 0px 0px 50px;*/
   }
   .body__conteudoCaixa{
     color: #2E3192;
     height: 60vh;
-    width: 50%;
+    width: 38vw;
     margin: 0;
     text-align: left;
     align-self: center;
   }
   .body__conteudoCaixa-titulo{
-    font-weight: normal;
-    font-weight: bold;
+    font-family: ministry, sans-serif;
+    font-style: normal;
+    font-weight: 400;
     font-size: 1.5em;
   }
   .body__conteudoCaixa-caixa{
     height: 50vh;
+    width: 33vw;
     margin: 0;
     overflow: auto;
   }
@@ -173,5 +182,6 @@ export default {
     font-style: normal;
     font-weight: 400;
   }
+
 </style>
 
