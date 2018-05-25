@@ -66,21 +66,31 @@
           </router-link>
           </div>       
       </div>  
+      {{polos}}
     </div>
   </section>
 </template>
 
 <script>
   import PerfilProfessor from './PerfilProfessor.vue'
+  import { mapGetters, mapActions } from 'vuex'
+
 export default {
-  name: 'HelloWorld',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
+   methods: {
+      ...mapActions({ 
+        getPolos: 'getPolos' 
+    })
   },
   components: {
     PerfilProfessor
+  },
+  computed: {    
+    ...mapGetters ({ 
+      polos: 'polos'
+    })
+  },
+  created (){
+    this.getPolos()
   }
 }
 </script>
