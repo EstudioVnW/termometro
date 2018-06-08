@@ -66,23 +66,37 @@
           </router-link>
           </div>       
       </div>  
+      {{respostas}}
     </div>
   </section>
 </template>
 
 <script>
   import PerfilProfessor from './PerfilProfessor.vue'
-export default {
-  name: 'HelloWorld',
+  import axios from 'axios';
+
+  export default {
+  name: 'DescricaoAula',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      respostas: [],
     }
   },
-  components: {
+  created() {
+  var config = {
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'Access-Control-Allow-Origin': '*' },
+    responseType: 'application/json'
+  };
+    axios.get(`http://0.0.0.0:5000/polos`, this.data, config)
+    .then(response => {
+      this.respostas = response.data
+    })
+  },
+    components: {
     PerfilProfessor
   }
 }
+
 </script>
 
 <style type="text/css">

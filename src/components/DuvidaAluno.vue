@@ -5,12 +5,12 @@
       <div class="conteudo-duvidas__container">
         <h1 class="conteudo-duvidas__container--titulo">Centro de Dúvidas</h1>
         <div class="conteudo-duvidas__container-bloco">
-          <div class="conteudo-duvidas__container-bloco-caixa">
-            <ul class="conteudo-duvidas__container-bloco-caixa-lista" v-for="recado in usuario.recados">
+          <form class="conteudo-duvidas__container-bloco-caixa">
+            <ul class="conteudo-duvidas__container-bloco-caixa-lista">
               <div class="conteudo-duvidas__container-bloco-caixa2-caixa--cor"></div>
-              <li class="conteudo-duvidas__container-bloco-caixa-lista--recado">{{recado}}</li>
+              <li class="conteudo-duvidas__container-bloco-caixa-lista--duvida" id="app" v-for="duvida in usuario.duvidas">{{duvida}}</li>
             </ul>
-          </div>
+          </form>
           <div class="conteudo-duvidas__container-bloco-caixa2">
             <div class="conteudo-duvidas__container-bloco-caixa2-caixa">
               <div class="conteudo-duvidas__container-bloco-caixa2-caixa--cor">
@@ -39,8 +39,8 @@
           </div>
         </div>
         <div class="conteudo-duvidas__container-bloco2" v-if="!professor">
-            <input class="conteudo-duvidas__container-bloco2--input" v-model="recado" v-on:keyup.enter="addRecado" placeholder="Digite a sua dúvida">
-            <button class="conteudo-duvidas__container-bloco2--button" v-on:click="addRecado">
+            <input class="conteudo-duvidas__container-bloco2--input" v-model="duvida" v-on:keyup.enter="addDuvida" placeholder="Digite a sua dúvida">
+            <button class="conteudo-duvidas__container-bloco2--button" v-on:click="addDuvida">
               Enviar dúvida
             </button>
         </div>
@@ -57,33 +57,156 @@
 </template>
 
 <script>
+  import axios from 'axios';
   import PerfilProfessor from './PerfilProfessor.vue'
-export default {
+  export default {
   name: 'DuvidaAluno',
   props: ['professor'],
-  created() {
-    this.professor = this.$route.query.professor;
-  },
   data () {
     return {
+      respostas: [],
             usuario: {
-        recados:[
-          
+     duvidas:[     
         ],
-      },
     }
-  },
-  methods:{
-    addRecado(){
-      this.usuario.recados.push(this.recado)
-      this.recado = ''
+  }
+},
+  created: function() {
+  this.professor = this.$route.query.professor;
+  //   axios.get()
+  //   .then(response => {
+  //     this.respostas = response.data
+  //     this.duvida = ''
+  //   })
+  // this.addDuvida();
+},
+  methods: {
+    addDuvida: function(){
+      axios.get()
+      this.usuario.duvidas.push(this.duvida)
+      this.duvida = ''
+      
     }
-  },
+    // .catch(e=>{
+    //   this.error.push(e);
+    // })
+},
   components: {
     PerfilProfessor
   }
 }
 </script> 
+<!--  methods: {
+    addDuvida: function(){
+      axios.get('http://jsonplaceholder.typicode.com/users')
+      this.usuario.duvidas.push(this.duvida)
+      this.duvida = ''
+      .then(response => {
+      // this.usuario.duvidas=response;
+      this.usuario.duvidas.push(this.duvida);
+      this.duvida = ''
+    } -->
+<!-- <script>
+  import axios from 'axios';
+  import PerfilProfessor from './PerfilProfessor.vue'
+export default {
+  name: 'DuvidaAluno',
+  props: ['professor'],
+  data () {
+    return {
+        respostas: [],
+            usuario: {
+        duvidas:[     
+        ],
+      },
+    } 
+  },
+  // created
+    // computed
+    created() {
+    this.professor = this.$route.query.professor;
+      axios.get('http://jsonplaceholder.typicode.com/users')
+      .then(response => {
+        this.respostas = response.data
+      })
+  },
+  methods:{
+    addDuvida(){
+      this.usuario.duvidas.push(this.duvida)
+      this.duvida = ''
+    },
+  },
+  components: {
+    PerfilProfessor
+  }
+}
+</script>  -->
+
+<!-- axios({
+  method: 'post', // verbo http
+  url: 'http://url-api.com/api/v1/recurso', // url
+  data: {
+    name: 'Carlos', // Parâmetro 1 enviado
+    company: 'EspecializaTi' // Parâmetro 2 enviado
+  }
+})
+.then(response => {
+    console.log(response)
+})
+.catch(error => {
+    console.log(error)
+}) -->
+
+// import axios from 'axios'; 
+  import PerfilProfessor from './PerfilProfessor.vue'
+  // import duvidas from '..../termometro-api/services/duvidas.py'
+  export default {
+    name: 'DuvidaAluno',
+    props: ['professor'],
+    data () {
+      return {
+              usuario: {
+          duvidas:[
+          ],
+          duvidas: [
+          ]
+        },
+      }
+    },
+    created() {
+      this.professor = this.$route.query.professor;
+
+      axios.get(`http://0.0.0.0:5000/duvidas`)
+      .then(response => {
+        this.duvidas = response.data
+      })
+    },
+    methods:{
+      addduvida(){
+        this.usuario.duvidas.push(this.duvida)
+        this.duvida = ''
+      }
+    },
+    components: {
+      PerfilProfessor
+    }
+  }
+
+// import axios from 'axios';
+//   export default {
+//     name: 'Aula11B',
+//     data () {
+//       return {
+//         usuarios: []
+//       }
+//     },
+//     created(){
+//       axios.get(`http://jsonplaceholder.typicode.com/users`)
+//       .then(response => {
+//         this.usuarios = response.data
+//       })
+//     }
+//   }
 
 <style scoped>
 .body{
@@ -142,7 +265,7 @@ export default {
     display: flex;
     align-items: center;
   }
-  .conteudo-duvidas__container-bloco-caixa-lista--recado{
+  .conteudo-duvidas__container-bloco-caixa-lista--duvida{
     width: 85%;
     margin: 5px 10px;
     color: #2E3192;
